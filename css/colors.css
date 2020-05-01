@@ -74,8 +74,8 @@ a:focus,
 	color: #08c !important;
 }
 
-.page-title .bg-green,
-.masonry-box:hover .blog-meta span.bg-green,
+.page-title .bg-blue,
+.masonry-box:hover .blog-meta span.bg-blue,
 .color-blue a {
 	background-color: #08c !important;
 }
@@ -98,23 +98,23 @@ a:focus,
 	color: #103157 !important;
 }
 
-.page-title .bg-yellow,
-.masonry-box:hover .blog-meta span.bg-yellow,
+.page-title .bg-purle,
+.masonry-box:hover .blog-meta span.bg-purple,
 .color-purple a {
 	background-color: #103157 !important;
 }
 
-.navbar-nav .nav-link.active.color-grey-hover,
-.navbar-nav .nav-link.color-grey-hover:hover,
-.navbar-nav .nav-link.color-grey-hover:focus {
-	color: #6f1683 !important;
+.navbar-nav .nav-link.active.color-purple-hover,
+.navbar-nav .nav-link.color-purple-hover:hover,
+.navbar-nav .nav-link.color-purple-hover:focus {
+	color: #103157 !important;
 }
 
-.portfolio .blog-meta span.bg-grey,
-.page-title .bg-grey,
-.masonry-box:hover .blog-meta span.bg-grey,
-.color-grey a {
-	background-color: #6f1683 !important;
+.portfolio .blog-meta span.bg-purple,
+.page-title .bg-purple,
+.masonry-box:hover .blog-meta span.bg-purple,
+.color-purple a {
+	background-color: #103157 !important;
 }
 
 .fa-star-o,
