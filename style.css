@@ -16,7 +16,7 @@
 body {
 	font-size: 15px;
 	line-height: 26px;
-	background-color: #ffffff;
+	background-color: #eff0f3;
 }
 
 h1,
@@ -163,7 +163,6 @@ a {
 
 .logo img {
 	max-width: 324px;
-	max-width: 100%;
 	margin: auto;
 	text-align: center;
 	display: block;
@@ -1246,17 +1245,17 @@ hr.invis3 {
 }
 
 .hovereffect span::before {
-	width: 90px;
+	width: 60px;
 	text-align: center;
 	left: 0;
 	right: 0;
-	top: 45%;
+	top: 50%;
 	margin: -2rem auto;
 	visibility: hidden;
 	position: absolute;
-	height: 90px;
+	height: 60px;
 	display: block;
-	content: url(images/hover.png);
+	content: url(images/hover.svg);
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
