@@ -42,20 +42,7 @@ a:focus,
 
 /* OTHER COLORS 
 **************************************/
-
-.navbar-nav .nav-link.active.color-pink-hover,
-.navbar-nav .nav-link.color-pink-hover:hover,
-.navbar-nav .nav-link.color-pink-hover:focus {
-	color: #deacca !important;
-}
-
-.page-title .bg-pink,
-.portfolio .blog-meta span.bg-pink,
-.masonry-box:hover .blog-meta span.bg-pink,
-.color-pink a {
-	background-color: #deacca !important;
-}
-
+/* 
 .navbar-nav .nav-link.active.color-aqua-hover,
 .navbar-nav .nav-link.color-aqua-hover:hover,
 .navbar-nav .nav-link.color-aqua-hover:focus {
@@ -66,7 +53,7 @@ a:focus,
 .masonry-box:hover .blog-meta span.bg-aqua,
 .color-aqua a {
 	background-color: #2ad2c9 !important;
-}
+} */
 
 .navbar-nav .nav-link.active.color-blue-hover,
 .navbar-nav .nav-link.color-blue-hover:hover,
