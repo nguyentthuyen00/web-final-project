@@ -24,7 +24,7 @@
 <section class="section wb">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-8 offset-md-2">
                 <div class="page-wrapper">
                     <div class="portfolio row">
 
