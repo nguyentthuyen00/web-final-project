@@ -9,7 +9,7 @@
             <!-- end col -->
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="index.php">Trang chủ</a></li>
                     <li class="breadcrumb-item"><a href="#">Môn học</a></li>
                     <li class="breadcrumb-item active">Không tìm thấy</li>
                 </ol>

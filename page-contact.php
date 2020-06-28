@@ -32,11 +32,9 @@
                                     <p>Nếu bạn có điều gì thắc mắc hay những lời góp ý dành cho chúng mình, hãy điền vào form dưới đây. Chúng mình sẽ phản hồi cho bạn sớm nhất có thể. Cảm ơn bạn nhiều <i class="fa fa-heart"></i> </p>
                                 </div>
                             </div><!-- end row -->
-
-
-                            <div class="row">
+                           <div class="row">
                                 <div class="col-lg-12">
-                                    <form class="form-wrapper">
+                                    <form action="layout/send.php" method="post" class="form-wrapper">
                                     <h4></h4>
                                         <input type="text" class="form-control" placeholder="Tên của bạn là gì?">
                                         <input type="text" class="form-control" placeholder="Bạn nhập email ở đây nhé, chúng mình sẽ phản hồi cho bạn!">
