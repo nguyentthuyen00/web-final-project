@@ -7,15 +7,15 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/uit-e.jpg" alt="First slide">
+                    <img class="d-block w-100" src="images/design1.png" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/baner_vnul.jpg" alt="Second slide">
+                <a href="https://oep.uit.edu.vn/vi/cap-nhat-thong-bao-lich-thi-cuoi-hoc-ky-2-nam-hoc-2019-2020" target="_blank">  <img class="d-block w-100" src="images/design3.png" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/hoat_dong_giang_day_va_hoc_tai_truong_dh_cntt.jpg" alt="Third slide">
+                <a href="https://tuyensinh.uit.edu.vn/uit-tour-360/" target="_blank">  <img class="d-block w-100" src="images/design2.png" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
