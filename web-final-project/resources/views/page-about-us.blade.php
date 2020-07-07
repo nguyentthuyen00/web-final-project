@@ -12,8 +12,8 @@
             <!-- end col -->
             <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                    <li class="breadcrumb-item"><a href="page-about-us.html">Ecautopass Team</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/index') }}">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/page-about-us') }}s">Ecautopass Team</a></li>
                 </ol>
             </div>
             <!-- end col -->
@@ -35,7 +35,7 @@
                         <!-- Diem Huong -->
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                <img src="upload/author-leader.png" alt="" class="img-fluid rounded-circle">
+                                <img src="{{ asset('upload/author-leader.png') }}" alt="" class="img-fluid rounded-circle">
                             </div>
                             <!-- end col -->
 
@@ -60,7 +60,7 @@
                         <!-- Thu Huyen -->
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                <img src="upload/author-member-1.png" alt="" class="img-fluid rounded-circle">
+                                <img src="{{ asset('upload/author-member-1.png') }}" alt="" class="img-fluid rounded-circle">
                             </div>
                             <!-- end col -->
 
@@ -85,7 +85,7 @@
                         <!-- Thanh Tuan -->
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                <img src="upload/author-member-2.png" alt="" class="img-fluid rounded-circle">
+                                <img src="{{ asset('upload/author-member-2.png') }}" alt="" class="img-fluid rounded-circle">
                             </div>
                             <!-- end col -->
 

@@ -10,8 +10,8 @@
             <!-- end col -->
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                    <li class="breadcrumb-item"><a href="#">Môn học</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/index') }}">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/page-subject') }}">Môn học</a></li>
                     <li class="breadcrumb-item active">Không tìm thấy</li>
                 </ol>
             </div>
@@ -34,7 +34,7 @@
                                 <h2>404</h2>
                                 <h3>Oh no! Page Not Found</h3>
                                 <p>The page you are looking for no longer exists. Perhaps you can return back to the site's homepage and see if you can find what you are looking for. Or, you can try finding it with the information below.</p>
-                                <a href="index.html" class="btn btn-primary">Về trang chủ</a>
+                                <a href="{{ url('/index') }}" class="btn btn-primary">Về trang chủ</a>
                             </div>
                         </div>
                     </div>

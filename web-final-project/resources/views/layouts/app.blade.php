@@ -105,7 +105,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo">
-                            <img src="images/logo.svg" alt="">
+                            <img src="{{ asset('images/logo.svg') }}" alt="">
                         </div><!-- end logo -->
                     </div>
                 </div><!-- end row -->
@@ -213,7 +213,7 @@
             <div class="col-lg-8 offset-lg-2">
                 <div class="widget">
                     <div class="footer-text text-center">
-                        <a href="index.php"><img src="{{ asset('images/apple-touch-icon.svg') }}" alt="" class="img-fluid"></a>
+                        <a href="{{ url('index') }}"><img src="{{ asset('images/logo.svg') }}" alt="" class="img-fluid"></a>
                         <p>Ecautopass - Tổng hợp tài liệu và đề thi ngành Thương mại điện tử</p>
                         <div class="social">
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fa fa-github"></i></a>
