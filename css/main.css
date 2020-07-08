@@ -1,7 +1,8 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
+
+/* @font-face {
     font-family: Poppins-Regular;
     src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
@@ -20,6 +21,7 @@
     font-family: Poppins-SemiBold;
     src: url('../fonts/poppins/Poppins-SemiBold.ttf');
 }
+ */
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -34,14 +36,14 @@
 body,
 html {
     height: 100%;
-    font-family: Poppins-Regular, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 
 /*---------------------------------------------*/
 
 a {
-    font-family: Poppins-Regular;
+    font-family: Roboto;
     font-size: 14px;
     line-height: 1.7;
     color: #666666;
@@ -58,11 +60,7 @@ a:focus {
 
 a:hover {
     text-decoration: none;
-    color: #6a7dfe;
-    color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-    color: -o-linear-gradient(left, #21d4fd, #b721ff);
-    color: -moz-linear-gradient(left, #21d4fd, #b721ff);
-    color: linear-gradient(left, #21d4fd, #b721ff);
+    color: #3197d6;
 }
 
 
@@ -255,7 +253,7 @@ iframe {
 
 .login100-form-title {
     display: block;
-    font-family: Poppins-Bold;
+    font-family: Roboto;
     font-size: 30px;
     color: #333333;
     line-height: 1.2;
@@ -278,7 +276,7 @@ iframe {
 }
 
 .input100 {
-    font-family: Poppins-Regular;
+    font-family: Roboto;
     font-size: 15px;
     color: #555555;
     line-height: 1.2;
@@ -314,11 +312,7 @@ iframe {
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-    background: #6a7dfe;
-    background: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-    background: -o-linear-gradient(left, #21d4fd, #b721ff);
-    background: -moz-linear-gradient(left, #21d4fd, #b721ff);
-    background: linear-gradient(left, #21d4fd, #b721ff);
+    background: #3197d6;
 }
 
 .focus-input100::after {
@@ -380,19 +374,11 @@ iframe {
 }
 
 .btn-show-pass:hover {
-    color: #6a7dfe;
-    color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-    color: -o-linear-gradient(left, #21d4fd, #b721ff);
-    color: -moz-linear-gradient(left, #21d4fd, #b721ff);
-    color: linear-gradient(left, #21d4fd, #b721ff);
+    color: #3197d6;
 }
 
 .btn-show-pass.active {
-    color: #6a7dfe;
-    color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
-    color: -o-linear-gradient(left, #21d4fd, #b721ff);
-    color: -moz-linear-gradient(left, #21d4fd, #b721ff);
-    color: linear-gradient(left, #21d4fd, #b721ff);
+    color: #3197d6;
 }
 
 

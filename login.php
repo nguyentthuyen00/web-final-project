@@ -35,36 +35,33 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <form class="login100-form validate-form">
-                    <span class="login100-form-title p-b-26">
-						Welcome to
-					</span>
                     <span class="login100-form-title p-b-48">
 						<img src="images/logo.svg" alt="">
 					</span>
 
-                    <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" name="username">
-                        <span class="focus-input100" data-placeholder="Username"></span>
+                    <div class="wrap-input100 validate-input" data-validate="Điền tài khoản">
+                        <input class="input100" type="text" name="username" >
+                        <span class="focus-input100" data-placeholder="Tài khoản"></span>
                     </div>
 
-                    <div class="wrap-input100 validate-input" data-validate="Enter password">
+                    <div class="wrap-input100 validate-input" data-validate="Điền mật khẩu">
                         <span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
                         <input class="input100" type="password" name="pass">
-                        <span class="focus-input100" data-placeholder="Password"></span>
+                        <span class="focus-input100" data-placeholder="Mật khẩu"></span>
                     </div>
 
                     <div class="container-login100-form-btn">
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
                             <button class="login100-form-btn">
-								Login
+								ĐĂNG NHẬP
 							</button>
                         </div>
                     </div>
 
-                    <div class="text-center p-t-115">
+                <!--    <div class="text-center p-t-115">
                         <span class="txt1">
 							Don’t have an account?
 						</span>
@@ -72,7 +69,7 @@
                         <a class="txt2" href="#">
 							Sign Up
 						</a>
-                    </div>
+                    </div> -->
                 </form>
             </div>
         </div>

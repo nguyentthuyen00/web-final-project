@@ -196,7 +196,7 @@
                                 <a class="nav-link color-blue-hover" href="page-video.php"><i class="fa fa-play-circle-o"></i> Videos học tập</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link color-blue-hover" href="login.html"> Đăng nhập</a>
+                                <a class="nav-link color-blue-hover" href="login.php"> Đăng nhập</a>
                             </li>
                         </ul>
                     </div>
