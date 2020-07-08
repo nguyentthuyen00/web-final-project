@@ -34,13 +34,12 @@
                             </div><!-- end row -->
                            <div class="row">
                                 <div class="col-lg-12">
-                                    <form action="layout/send.php" method="post" class="form-wrapper">
+                                    <form method="post" class="form-wrapper" action="https://script.google.com/macros/s/AKfycby8rIY-Acha0dumUsbIz-NWRE5NDFfnViMBpscr8IxJMpCEzaw/exec">
                                     <h4></h4>
-                                        <input type="text" class="form-control" placeholder="Tên của bạn là gì?">
-                                        <input type="text" class="form-control" placeholder="Bạn nhập email ở đây nhé, chúng mình sẽ phản hồi cho bạn!">
-                                        <input type="text" class="form-control" placeholder="Có thể cho tụi mình số điện thoại của bạn không?">
-                                        <input type="text" class="form-control" placeholder="Bạn muốn hỏi chúng mình gì thế?">
-                                        <textarea class="form-control" placeholder="Hãy nói rõ hơn ở đây nhé!"></textarea>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Tên của bạn là gì?">
+                                        <input type="text" class="form-control" name="email" id="email" placeholder="Bạn nhập email ở đây nhé, chúng mình sẽ phản hồi cho bạn!">
+                                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Có thể cho tụi mình số điện thoại của bạn không?">
+                                        <textarea class="form-control" name="content" id="content" placeholder="Bạn muốn liên hệ với chúng mình về vấn đề gì nè?"></textarea>
                                         <button type="submit" class="btn btn-primary"> Gửi <i class="fa fa-envelope-open-o"></i></button>
                                     </form>
                                 </div>
@@ -51,5 +50,49 @@
                 </div><!-- end row -->
             </div><!-- end container -->
         </section>
+        <!-- send mail -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <script>
+            function sendMail() {
+                const api = 'https://script.google.com/macros/s/AKfycby8rIY-Acha0dumUsbIz-NWRE5NDFfnViMBpscr8IxJMpCEzaw/exec';
+                //Get data from form
+                const email = $('#email').val();
+                const name = $('#name').val();
+                const phone = $('#phone').val();
+                const content = $('#content').val();
+                console.log('Call api')
+                axios({
+                    method: 'post',
+                    url: api,
+                    data: {email, name, phone, content},
+                    headers: {
+                    dataType: 'jsonp',
+                    responseType:'application/json',
+                    'Access-Control-Allow-Headers': 'x-requested-with'
+                    }
+                }).then(response=>response.json())
+                .then(response=>{
+                    console.log('response',response);
+                }).catch(err=>{
+                    console.log('error',err)
+                })
+                // $.ajax({
+                //     type: "POST",
+                //     url: api,
+                //     data: {email, name, phone, content},
+                //     dataType: 'jsonp',
+                //     // responseType:'application/json',
+                //     // crossDomain: true,
+                //     success: (data)=>{
+                //         console.log('resposne',data);
+                //         alert('Gửi liên hệ thành công.');
+                //     },
+    
+                // });
+                console.log('run')
+                return false;
+            }
+        </script>
 
         <?php include 'layout/footer.php' ?>
