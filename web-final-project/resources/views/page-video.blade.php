@@ -11,7 +11,7 @@
             <!-- end col -->
             <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/index') }}">Trang chủ</a></li>
                     <li class="breadcrumb-item active">Videos học tập</li>
                 </ol>
             </div>
@@ -40,14 +40,14 @@
                                     </div>
                                     <!-- end media -->
                                     <div class="blog-meta big-meta">
-                                        <h4><a href="single.html" title="">Nhập Môn Lập Trình</a></h4>
+                                        <h4><a href="#" title="">Nhập Môn Lập Trình</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh.</p>
-                                        <small><a href="blog-category-01.html" title="">Videos học tập</a></small>
-                                        <small><a href="single.html" title="">01/05/2020</a></small>
-                                        <small><a href="blog-author.html" title="">Ecautopass Team</a></small>
+                                        <small><a href="{{ url('page-video') }}" title="">Videos học tập</a></small>
+                                        <small><a href="#" title="">01/05/2020</a></small>
+                                        <small><a href="{{ url('page-about-us') }}" title="">Ecautopass Team</a></small>
                                     </div>
                                     <!-- end meta -->
-                                    <a href="single-video.html" class="btn btn-primary">Xem Thêm</a>
+                                    <a href="#" class="btn btn-primary">Xem Thêm</a>
                                 </div>
                                 <!-- end blog-box -->
                             </div>
@@ -62,14 +62,14 @@
                                     </div>
                                     <!-- end media -->
                                     <div class="blog-meta big-meta">
-                                        <h4><a href="single.html" title="">Lập Trình Hướng Đối Tượng</a></h4>
+                                        <h4><a href="#" title="">Lập Trình Hướng Đối Tượng</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh.</p>
-                                        <small><a href="blog-category-01.html" title="">Videos học tập</a></small>
-                                        <small><a href="single.html" title="">01/05/2020</a></small>
-                                        <small><a href="blog-author.html" title="">Ecautopass Team</a></small>
+                                        <small><a href="{{ url('page-video') }}" title="">Videos học tập</a></small>
+                                        <small><a href="#" title="">01/05/2020</a></small>
+                                        <small><a href="{{ url('page-about-us') }}" title="">Ecautopass Team</a></small>
                                     </div>
                                     <!-- end meta -->
-                                    <a href="single-video.html" class="btn btn-primary">Xem Thêm</a>
+                                    <a href="#" class="btn btn-primary">Xem Thêm</a>
                                 </div>
                                 <!-- end blog-box -->
                             </div>
@@ -84,14 +84,14 @@
                                     </div>
                                     <!-- end media -->
                                     <div class="blog-meta big-meta">
-                                        <h4><a href="single.html" title="">Đại Số Tuyến Tính</a></h4>
+                                        <h4><a href="#" title="">Đại Số Tuyến Tính</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh.</p>
-                                        <small><a href="blog-category-01.html" title="">Videos học tập</a></small>
-                                        <small><a href="single.html" title="">01/05/2020</a></small>
-                                        <small><a href="blog-author.html" title="">Ecautopass Team</a></small>
+                                        <small><a href="{{ url('page-video') }}" title="">Videos học tập</a></small>
+                                        <small><a href="#" title="">01/05/2020</a></small>
+                                        <small><a href="{{ url('page-about-us') }}" title="">Ecautopass Team</a></small>
                                     </div>
                                     <!-- end meta -->
-                                    <a href="single-video.html" class="btn btn-primary">Xem Thêm</a>
+                                    <a href="#" class="btn btn-primary">Xem Thêm</a>
                                 </div>
                                 <!-- end blog-box -->
                             </div>
@@ -106,14 +106,14 @@
                                     </div>
                                     <!-- end media -->
                                     <div class="blog-meta big-meta">
-                                        <h4><a href="single.html" title="">Xác Suất Thống Kê </a></h4>
+                                        <h4><a href="#" title="">Xác Suất Thống Kê </a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh.</p>
-                                        <small><a href="blog-category-01.html" title="">Videos học tập</a></small>
-                                        <small><a href="single.html" title="">01/05/2020</a></small>
-                                        <small><a href="blog-author.html" title="">Ecautopass Team</a></small>
+                                        <small><a href="{{ url('page-video') }}" title="">Videos học tập</a></small>
+                                        <small><a href="#" title="">01/05/2020</a></small>
+                                        <small><a href="{{ url('page-about-us') }}" title="">Ecautopass Team</a></small>
                                     </div>
                                     <!-- end meta -->
-                                    <a href="single-video.html" class="btn btn-primary">Xem Thêm</a>
+                                    <a href="#" class="btn btn-primary">Xem Thêm</a>
                                 </div>
                                 <!-- end blog-box -->
                             </div>
@@ -135,8 +135,8 @@
                         <nav aria-label="Page navigation">
                             <ul class="pagination justify-content-start">
                                 <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="page-404.html">2</a></li>
-                                <li class="page-item"><a class="page-link" href="page-404.html">3</a></li>
+                                <li class="page-item"><a class="page-link" href="{{ url('page-404') }}">2</a></li>
+                                <li class="page-item"><a class="page-link" href="{{ url('page-404') }}">3</a></li>
                                 <li class="page-item">
                                     <a class="page-link" href="#">Next</a>
                                 </li>

@@ -10,8 +10,8 @@
             <!-- end col -->
             <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.php">Trang chủ</a></li>
-                    <li class="breadcrumb-item"><a href="page-subject.php">Môn học</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/index') }}">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/page-subject') }}">Môn học</a></li>
                 </ol>
             </div>
             <!-- end col -->
@@ -33,7 +33,7 @@
                             <div class="blog-box">
                                 <div class="post-media">
                                     <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                        <img src="{{ asset('upload/menu_01.jpg') }}" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
                                         </div>
@@ -44,7 +44,7 @@
                                 <div class="blog-meta">
                                     <span class="bg-purple"><a href="#" title="">Chương 1</a></span>
                                     <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                    <small><a href="{{ url('/page-about-us') }}" title="">Ecautopass Team</a></small>
                                     <small><a href="#" title="">01/05/2020</a></small>
                                 </div>
                                 <!-- end meta -->
@@ -57,7 +57,7 @@
                             <div class="blog-box">
                                 <div class="post-media">
                                     <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                        <img src="{{ asset('upload/menu_01.jpg') }}" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
                                         </div>
@@ -68,7 +68,7 @@
                                 <div class="blog-meta">
                                     <span class="bg-purple"><a href="#" title="">Chương 2</a></span>
                                     <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                    <small><a href="{{ url('/page-about-us') }}" title="">Ecautopass Team</a></small>
                                     <small><a href="#" title="">01/05/2020</a></small>
                                 </div>
                                 <!-- end meta -->
@@ -81,7 +81,7 @@
                             <div class="blog-box">
                                 <div class="post-media">
                                     <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                        <img src="{{ asset('upload/menu_01.jpg') }}" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
                                         </div>
@@ -92,7 +92,7 @@
                                 <div class="blog-meta">
                                     <span class="bg-purple"><a href="#" title="">Chương 3</a></span>
                                     <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                    <small><a href="{{ url('/page-about-us') }}" title="">Ecautopass Team</a></small>
                                     <small><a href="#" title="">01/05/2020</a></small>
                                 </div>
                                 <!-- end meta -->
@@ -105,7 +105,7 @@
                             <div class="blog-box">
                                 <div class="post-media">
                                     <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                        <img src="{{ asset('upload/menu_01.jpg') }}" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
                                         </div>
@@ -116,7 +116,7 @@
                                 <div class="blog-meta">
                                     <span class="bg-purple"><a href="#" title="">Chương 4</a></span>
                                     <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                    <small><a href="{{ url('/page-about-us') }}" title="">Ecautopass Team</a></small>
                                     <small><a href="#" title="">01/05/2020</a></small>
                                 </div>
                                 <!-- end meta -->
@@ -129,7 +129,7 @@
                             <div class="blog-box">
                                 <div class="post-media">
                                     <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                        <img src="{{ asset('upload/menu_01.jpg') }}" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
                                         </div>
@@ -140,7 +140,7 @@
                                 <div class="blog-meta">
                                     <span class="bg-purple"><a href="#" title="">Chương 5</a></span>
                                     <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                    <small><a href="{{ url('/page-about-us') }}" title="">Ecautopass Team</a></small>
                                     <small><a href="#" title="">01/05/2020</a></small>
                                 </div>
                                 <!-- end meta -->
@@ -153,7 +153,7 @@
                             <div class="blog-box">
                                 <div class="post-media">
                                     <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                        <img src="{{ asset('upload/menu_01.jpg') }}" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
                                         </div>
@@ -164,7 +164,7 @@
                                 <div class="blog-meta">
                                     <span class="bg-purple"><a href="#" title="">Chương 6</a></span>
                                     <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                    <small><a href="{{ url('/page-about-us') }}" title="">Ecautopass Team</a></small>
                                     <small><a href="#" title="">01/05/2020</a></small>
                                 </div>
                                 <!-- end meta -->
@@ -177,7 +177,7 @@
                             <div class="blog-box">
                                 <div class="post-media">
                                     <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                        <img src="{{ asset('upload/menu_01.jpg') }}" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
                                         </div>
@@ -188,7 +188,7 @@
                                 <div class="blog-meta">
                                     <span class="bg-purple"><a href="#" title="">Chương 7</a></span>
                                     <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                    <small><a href="{{ url('/page-about-us') }}" title="">Ecautopass Team</a></small>
                                     <small><a href="#" title="">01/05/2020</a></small>
                                 </div>
                                 <!-- end meta -->
@@ -201,7 +201,7 @@
                             <div class="blog-box">
                                 <div class="post-media">
                                     <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                        <img src="{{ asset('upload/menu_01.jpg') }}" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
                                         </div>
@@ -212,7 +212,7 @@
                                 <div class="blog-meta">
                                     <span class="bg-purple"><a href="#" title="">Chương 8</a></span>
                                     <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                    <small><a href="{{ url('/page-about-us') }}" title="">Ecautopass Team</a></small>
                                     <small><a href="#" title="">01/05/2020</a></small>
                                 </div>
                                 <!-- end meta -->
@@ -225,7 +225,7 @@
                             <div class="blog-box">
                                 <div class="post-media">
                                     <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                        <img src="{{ asset('upload/menu_01.jpg') }}" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
                                         </div>
@@ -236,7 +236,7 @@
                                 <div class="blog-meta">
                                     <span class="bg-purple"><a href="#" title="">Chương 9</a></span>
                                     <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                    <small><a href="{{ url('/page-about-us') }}" title="">Ecautopass Team</a></small>
                                     <small><a href="#" title="">01/05/2020</a></small>
                                 </div>
                                 <!-- end meta -->
@@ -256,8 +256,8 @@
                         <nav aria-label="Page navigation">
                             <ul class="pagination justify-content-start">
                                 <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="page-404.html">2</a></li>
-                                <li class="page-item"><a class="page-link" href="page-404.html">3</a></li>
+                                <li class="page-item"><a class="page-link" href="{{ url('/page-404') }}">2</a></li>
+                                <li class="page-item"><a class="page-link" href="{{ url('/page-404') }}">3</a></li>
                                 <li class="page-item">
                                     <a class="page-link" href="#">Next</a>
                                 </li>
