@@ -50,7 +50,7 @@
    <div id="preloader">
         <img class="preloader" src="images/loader.gif" alt="">
     </div>
-    <!-- END LOADER>
+    <!-- END LOADER -->
 
     <div id="wrapper">
         <div class="collapse top-search" id="collapseExample">
@@ -60,7 +60,8 @@
                         <input type="text" class="form-control" placeholder="Bạn đang tìm gì thế?">
                         <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
                     </form>
-                </div><!-- end newsletter -->
+                </div>
+                <!-- end newsletter -->
             </div>
         </div><!-- end top-search -->
 
