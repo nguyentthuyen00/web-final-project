@@ -47,10 +47,10 @@
 <body>
 
     <!-- LOADER -->
-    <div id="preloader">
+   <div id="preloader">
         <img class="preloader" src="images/loader.gif" alt="">
     </div>
-    <!-- END LOADER -->
+    <!-- END LOADER>
 
     <div id="wrapper">
         <div class="collapse top-search" id="collapseExample">
