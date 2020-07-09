@@ -2,10 +2,10 @@
 -- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Jul 09, 2020 at 03:46 AM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.3.12
+-- Máy chủ: 127.0.0.1:3306
+-- Thời gian đã tạo: Th7 09, 2020 lúc 06:42 PM
+-- Phiên bản máy phục vụ: 10.4.10-MariaDB
+-- Phiên bản PHP: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `web-final-project`
+-- Cơ sở dữ liệu: `web-final-project`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `exam`
+-- Cấu trúc bảng cho bảng `exam`
 --
 
 DROP TABLE IF EXISTS `exam`;
@@ -36,22 +36,54 @@ CREATE TABLE IF NOT EXISTS `exam` (
   `IdSubject` varchar(8) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`IdExam`),
   KEY `IdSubject` (`IdSubject`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `exam`
+-- Đang đổ dữ liệu cho bảng `exam`
 --
 
 INSERT INTO `exam` (`IdExam`, `NameExam`, `Link`, `IdSubject`) VALUES
-(1, 'Bài thi Đường lối', 'https://drive.google.com/file/d/1IqiZ-FIoCxGWAcYSRxaa1QPskH6DREXj/view', 'CSVN'),
-(2, 'Bài thi Tư tưởng', 'https://drive.google.com/file/d/1n5cFHoqUmpzbSM6q7HaVw73jlbwzomyI/view', 'HCM'),
-(3, 'Bài thi MacLeNin', 't', 'maclenin'),
-(4, 'Bài thi tư tưởng 2', 'https://drive.google.com/file/d/1fvoSrZNGEtVtke69NPn8Cl-j_vF8JuCF/view', 'HCM');
+(2, 'Bộ câu hỏi ôn thi', 'https://drive.google.com/file/d/1n5cFHoqUmpzbSM6q7HaVw73jlbwzomyI/view', 'HCM'),
+(3, 'Đề cương Cuối kì', 'https://drive.google.com/file/d/1fvoSrZNGEtVtke69NPn8Cl-j_vF8JuCF/view', 'HCM'),
+(7, 'Slide training Giữa kì 1 năm 2017-2018', 'https://drive.google.com/file/d/1pci-D-JF9K9lgrio9R0fD7YbbaYVGKL1/view', 'NMMMT'),
+(8, 'Slide ôn tập Cuối kì phần Chia IP', 'https://drive.google.com/file/d/1ox3hFAzArWC7J-rfnAG1dMP9tQELtziD/view', 'NMMMT'),
+(9, 'Slide ôn tập Cuối kì phần Data Link', 'https://drive.google.com/file/d/1hh22Qzk3CXBHuwRKhgmKtowh4s1iJbg-/view', 'NMMMT'),
+(10, 'Slide ôn tập Cuối kì phần Network', 'https://drive.google.com/file/d/18h7w7TePnsdqdV_oQlXpFBw3GmKTIDoX/view', 'NMMMT'),
+(11, 'Đề Thi Cuối Kì 2015-2016 ', 'https://drive.google.com/file/d/1hZQjkf7jfid7Nxlne1aIAPgr_SFJ7uiP/view', 'CTRR'),
+(12, 'Đề Thi Cuối Kì 2014-2015 ', 'https://drive.google.com/file/d/1-vekRsFISldqdWmsBsf7h9yzYiz_MvPc/view', 'CTRR'),
+(13, 'Đề Thi Cuối Kì 2013-2014 ', 'https://drive.google.com/file/d/1z0IrgVGin_QxGQr1w9qRB0VBjECUdipf/view', 'CTRR'),
+(14, 'Đề thi Cuối kì 2016-2017', 'https://drive.google.com/file/d/1RlMHlrCXoh-sJKAq8IYjG8tQTzl__5b8/view', 'CTRR'),
+(15, 'Đề Thi Giữa Kì 2015-2016\r\n', 'https://drive.google.com/file/d/16kN6RJ87_wm4joF3_rKy3sbxnX8aleML/view', 'CTRR'),
+(16, 'Đề thi cuối kỳ 2016-2017 (HKII) ', 'https://drive.google.com/file/d/168mueskgfvWLkvwKOwaiQIRG2r2vWFCy/view', 'XSTK'),
+(17, 'Nội dung ôn thi và đề mẫu cuối HK2, 2016-2017', 'https://drive.google.com/file/d/1WVPyqnOrZg3MD4-XorlFK0LUNp-E0F40/view', 'XSTK'),
+(18, 'Đề thi giữa kỳ HKI 2016-2017 ', 'https://drive.google.com/file/d/1z-kVwb5p9HHbIjnt376K2vdQT4Y3bqk9/view', 'CSDL'),
+(19, 'Đề thi cuối kỳ HKI 2014-2015', 'https://drive.google.com/file/d/1qXT5uIdoPPDTWkPvT8KVcJ1O34iyCVXA/view', 'CSDL'),
+(23, 'Training Cuối kì khoa CNPM 2019-2020', 'https://drive.google.com/file/d/1T_06I10fjBjt5j8OxeZGhGhaY6_t9QkA/view?fbclid=IwAR2M9w9AF_wdDLE7IPsRvFwF8AuczNLVAsZVYZFM0nW0TMq94IHP42jgEC4', 'NMLT'),
+(28, 'Slide training Giữa kì 2018 - 2019', 'https://drive.google.com/file/d/1nN3L8LUnB91ZNH8U0bincsRP1yU0pwbI/view?fbclid=IwAR1JNHVFLSj7byqnk68ycUUcXCwKsN6LPpHoKQ_viuA88YSS_watQTOXY3I', 'CTDLVGT'),
+(30, 'Ngân hàng câu hỏi của UTE', 'https://drive.google.com/file/d/1EaFGMHhGHEjBhfxu2ovXAWWeB7xGnM5h/view?fbclid=IwAR16c_Fa_sbLecS3zRMdAPLiKOUViWlPyFLjUN8EuunwvWCVeGrrc8LBFwU', 'PLDC'),
+(31, 'Đề thi Cuối kì I 2018 - 2019', 'https://drive.google.com/file/d/11APZamX8XQ7CU-8MEtp16DCrX9xrZaYU/view', 'GTN'),
+(32, 'Đề thi Cuối kì I 2019 - 2020', 'https://drive.google.com/file/d/1E746ouOOX3UhRX9OJpqcdjKVIPHVcif-/view', 'GTN'),
+(33, 'Đề thi Cuối kì I 2017-2018', 'https://drive.google.com/file/d/1UV7GcPD2gtQM26VwHNHBL0fzJTz_53Dt/view', 'LTHDT'),
+(35, 'Đề thi Cuối kì I 2018 - 2019', 'https://drive.google.com/file/d/1e9QKX13U9PvruIgexs9IpVKCoIJ34PXK/view', 'LTHDT'),
+(36, 'Đề thi Cuối kì II 2017 - 2018', 'https://drive.google.com/file/d/1xr6d3NKBNMkCiXzFqNQzY2q8kC87FBbg/view', 'LTHDT'),
+(37, 'Đáp án Đề thi Cuối kì II 2017 - 2018', 'https://drive.google.com/file/d/1d0LjlJIyokxutO_C3cSWK_YdSmK1IktK/view', 'LTHDT'),
+(38, 'Đề thi Cuối kì II 2018-2019', 'https://drive.google.com/file/d/1TBH8I92IxhPqWsRiUtXuZ0hDMyKqKsAz/view', 'CTDLVGT'),
+(39, 'Đề thi Giữa kì II 2018-2019', 'https://drive.google.com/file/d/1UAB7H0VSPHsdhoYqQRW85n7BR2rVWiqr/view', 'CTDLVGT'),
+(40, 'Đề thi Cuối kì I 2018-2019', 'https://drive.google.com/file/d/1Vy9Rj-3lUnFTANa8lPepdKhpT8CzgUkG/view', 'GiaiTich'),
+(41, 'Đề thi Cuối kì I 2019-2020', 'https://drive.google.com/file/d/1gklNhPgJXc7dJbDM1urT2Z8uGo2xZGot/view', 'GiaiTich'),
+(42, 'Đề thi Giữa kì I 2018-2019', 'https://drive.google.com/file/d/1DSkyDmEZTpEahgg4QJplWfSn5llOqvX1/view', 'GiaiTich'),
+(43, 'Đề thi Giữa kì I 2017-2018', 'https://drive.google.com/file/d/1MU4Hb2ELgsviX8fyowfiFCJcBdMsph2V/view', 'DSTT'),
+(44, 'Đề thi Giữa kì I 2018-2019', 'https://drive.google.com/file/d/1cHI0qetVLfR8Zr_dORIO2GGwQOqvm-yJ/view', 'DSTT'),
+(45, 'Đề thi Cuối kì I 2017-2018', 'https://drive.google.com/file/d/1MTVmWjeRbH9hEB8UWPiMAu7qTmpyMBq9/view', 'DSTT'),
+(46, 'Đề thi Cuối kì I 2018-2019', 'https://drive.google.com/file/d/10hHa5uysZTGwxMGJemKuQfzv-SaeuMeF/view', 'DSTT'),
+(47, 'Đề thi Cuối kì I 2019 - 2020', 'https://drive.google.com/file/d/1yNaqTrfd8zOZ56QErynsI44LMwiVMaYF/view', 'NMLT'),
+(48, 'Đề thi Cuối kì I 2018 - 2019', 'https://drive.google.com/file/d/1yIs9V3jmjL5hAG0P_FzXjOKOxqVRdd99/view', 'NMLT'),
+(49, 'Đề thi Cuối kì I 2018 - 2019', 'https://drive.google.com/file/d/1KjpE8ALkvamM6woX4KaGfEVVPlcB9JvH/view', 'CSVN');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `subject`
+-- Cấu trúc bảng cho bảng `subject`
 --
 
 DROP TABLE IF EXISTS `subject`;
@@ -63,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `subject` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `subject`
+-- Đang đổ dữ liệu cho bảng `subject`
 --
 
 INSERT INTO `subject` (`IdSubject`, `NameSubject`, `TypeSubject`) VALUES
@@ -105,7 +137,7 @@ INSERT INTO `subject` (`IdSubject`, `NameSubject`, `TypeSubject`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `video`
+-- Cấu trúc bảng cho bảng `video`
 --
 
 DROP TABLE IF EXISTS `video`;
@@ -117,11 +149,11 @@ CREATE TABLE IF NOT EXISTS `video` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `exam`
+-- Các ràng buộc cho bảng `exam`
 --
 ALTER TABLE `exam`
   ADD CONSTRAINT `exam_ibfk_1` FOREIGN KEY (`IdSubject`) REFERENCES `subject` (`IdSubject`);
