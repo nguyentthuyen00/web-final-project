@@ -17,14 +17,29 @@
         <div class="page-title wb">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <h2><i class="fa fa-user bg-blue"></i> Môn học <small class="hidden-xs-down hidden-sm-down"> Ở đây có tài liệu môn học </small></h2>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><?php
+                                $connection = mysqli_connect("localhost", "root", "", "web-final-project");
+                                mysqli_set_charset($connection,"utf8");
+                                $monhoc = "js";
+                                if(isset($_GET['subject'])){
+                                    $monhoc = $_GET['subject'];
+                                }
+
+                                $sql="SELECT s.IdSubject,e.NameExam , e.Link, s.NameSubject 
+                                FROM subject s INNER JOIN exam e ON s.IdSubject=e.IdSubject 
+                                WHERE s.IdSubject = '$monhoc';";
+
+                                $result = mysqli_query($connection, $sql);
+                                $result1 = mysqli_query($connection, $sql);
+                                $row=mysqli_fetch_row($result);
+                                ?>
+                        <h2><i class="fa fa-user bg-blue"></i><?php echo $row[3] ?> <small class="hidden-xs-down hidden-sm-down"> Ở đây có tài liệu môn học </small></h2>
                     </div>
                     <!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.php">Trang chủ</a></li>
-                            <li class="breadcrumb-item"><a href="page-subject.php">Môn học</a></li>
+                            <li class="breadcrumb-item"><a href="./page-subject?subject=<?php echo $row[0] ?>"><?php echo $row[3] ?></a></li>
                         </ol>
                     </div>
                     <!-- end col -->
@@ -41,36 +56,19 @@
                     <div class="col-md-8 offset-md-2">
                         <div class="page-wrapper">
                             <div class="portfolio row">
-                                <?php
-                                $connection = mysqli_connect("localhost", "root", "", "web-final-project");
-                                mysqli_set_charset($connection,"utf8");
-                                $monhoc = "js";
-                                if(isset($_GET['subject'])){
-                                    $monhoc = $_GET['subject'];
-                                }
-
-                                $sql="SELECT s.IdSubject,e.NameExam , e.Link 
-                                FROM subject s INNER JOIN exam e ON s.IdSubject=e.IdSubject 
-                                WHERE s.IdSubject = '$monhoc';";
-
-                                $result = mysqli_query($connection, $sql);
-
-                                
-                                while ($row=mysqli_fetch_row($result)): ?> 
+                                <?php while ($row=mysqli_fetch_row($result1)): ?> 
                                     <div class="pitem item-w1 item-h1">
                                         <div class="blog-box">
                                             <div class="post-media">
-                                                <a href="<?php echo "$row[2]" ?>" title="">
                                                     <img src="upload/menu_01.jpg" alt="" class="img-fluid">
                                                     <div class="hovereffect">
                                                         <span></span>
                                                     </div>
                                                     <!-- end hover -->
-                                                </a>
                                             </div>
                                             <!-- end media -->
                                             <div class="blog-meta">
-                                                <span class="bg-purple"><a href="<?php echo "$row[2]" ?>" title=""><?php echo "$row[1]" ?></a>
+                                                <span class="bg-purple"><?php echo "$row[1]" ?></a>
                                                 </span>
 
                                             </div>
