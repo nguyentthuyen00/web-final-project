@@ -18,13 +18,13 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <a href="index.php" target="_self"> <img class="d-block w-100" src="images/design.png" alt="First slide">
+          <a style = "width: 100%;" href="index.php" target="_self"> <img class="d-block w-100" src="images/design.png" alt="First slide"> </a>
         </div>
         <div class="carousel-item">
-            <a href="https://oep.uit.edu.vn/vi/cap-nhat-thong-bao-lich-thi-cuoi-hoc-ky-2-nam-hoc-2019-2020" target="_blank"> <img class="d-block w-100" src="images/design3.png" alt="Second slide">
+          <a style = "width: 100%;" href="https://oep.uit.edu.vn/vi/cap-nhat-thong-bao-lich-thi-cuoi-hoc-ky-2-nam-hoc-2019-2020" target="_blank"> <img class="d-block w-100" src="images/design3.png" alt="Second slide"> </a>
         </div>
         <div class="carousel-item">
-            <a href="https://tuyensinh.uit.edu.vn/uit-tour-360/" target="_blank"> <img class="d-block w-100" src="images/design2.png" alt="Third slide">
+          <a style = "width: 100%;" href="https://tuyensinh.uit.edu.vn/uit-tour-360/" target="_blank"> <img class="d-block w-100" src="images/design2.png" alt="Third slide"> </a>
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
