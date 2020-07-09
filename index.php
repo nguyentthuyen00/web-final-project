@@ -10,7 +10,7 @@
             </ol>
              <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/design1.png" alt="First slide">
+                <a href="index.php" target="_self"> <img class="d-block w-100" src="images/design.png" alt="First slide">
                 </div>
                 <div class="carousel-item">
                 <a href="https://oep.uit.edu.vn/vi/cap-nhat-thong-bao-lich-thi-cuoi-hoc-ky-2-nam-hoc-2019-2020" target="_blank">  <img class="d-block w-100" src="images/design3.png" alt="Second slide">

@@ -100,7 +100,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo">
-                            <img src="images/logo.svg" alt="">
+                        <a href="index.php" target="_self"> <img src="images/logo.svg" alt="">
                         </div><!-- end logo -->
                     </div>
                 </div><!-- end row -->
@@ -194,6 +194,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link color-blue-hover" href="page-video.php"><i class="fa fa-play-circle-o"></i> Videos học tập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-blue-hover" href="login.php"> Đăng nhập</a>
                             </li>
                         </ul>
                     </div>
