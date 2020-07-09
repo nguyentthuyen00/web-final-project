@@ -33,7 +33,7 @@
                                 $result1 = mysqli_query($connection, $sql);
                                 $row=mysqli_fetch_row($result);
                                 ?>
-                        <h2><i class="fa fa-user bg-blue"></i><?php echo $row[3] ?> <small class="hidden-xs-down hidden-sm-down"> Ở đây có tài liệu môn học </small></h2>
+                        <h2><i class="fa fa-book"></i><?php echo $row[3] ?> <small class="hidden-xs-down hidden-sm-down"> Ở đây có tài liệu môn học </small></h2>
                     </div>
                     <!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
@@ -59,27 +59,16 @@
                                 <?php while ($row=mysqli_fetch_row($result1)): ?> 
                                     <div class="pitem item-w1 item-h1">
                                         <div class="blog-box">
-                                            <div class="post-media">
-                                                    <img src="upload/menu_01.jpg" alt="" class="img-fluid">
-                                                    <div class="hovereffect">
-                                                        <span></span>
-                                                    </div>
-                                                    <!-- end hover -->
-                                            </div>
-                                            <!-- end media -->
-                                            <div class="blog-meta">
-                                                <span class="bg-purple"><?php echo "$row[1]" ?></a>
-                                                </span>
-
-                                            </div>
+                                            <h3><?php echo "$row[1]" ?></h3>
                                             <span class="ml-2 pointer" d-id=345 data-toggle="tooltip" title="Tải xuống">
-                                                <i class="fa fa-download"><a href="<?php echo "$row[2]" ?>"></a></i>
+                                                <a href="<?php echo "$row[2]" ?>"><i class="fa fa-download"></i></a>
                                             </span>
                                             <!-- end meta -->
 
                                         </div>
                                         <!-- end blog-box -->
                                     </div>
+                                    <br>
                                 <?php endwhile; ?>
                                 <!--  end col -->
 
