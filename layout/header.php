@@ -48,8 +48,8 @@
     <!-- LOADER -->
     <div id="preloader">
         <img class="preloader" src="images/loader.gif" alt="">
-    </div>end loader
-    <!--END LOADER -->
+    </div>
+    <!-- END LOADER -->
 
     <div id="wrapper">
         <div class="collapse top-search" id="collapseExample">
