@@ -45,11 +45,11 @@
 </head>
 <body>
 
-    <!-- LOADER
+    <!-- LOADER -->
     <div id="preloader">
         <img class="preloader" src="images/loader.gif" alt="">
     </div>end loader
-    END LOADER -->
+    <!--END LOADER -->
 
     <div id="wrapper">
         <div class="collapse top-search" id="collapseExample">
@@ -196,7 +196,7 @@
                                 <a class="nav-link color-blue-hover" href="page-video.php"><i class="fa fa-play-circle-o"></i> Videos học tập</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link color-blue-hover" href="login.php"> Đăng nhập</a>
+                                <a class="nav-link color-blue-hover" href="login/login.html"> Đăng nhập</a>
                             </li>
                         </ul>
                     </div>
