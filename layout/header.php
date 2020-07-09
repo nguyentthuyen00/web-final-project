@@ -45,11 +45,11 @@
 </head>
 <body>
 
-    <!-- LOADER -->
+    <!-- LOADER
     <div id="preloader">
         <img class="preloader" src="images/loader.gif" alt="">
-    </div><!-- end loader -->
-    <!-- END LOADER -->
+    </div>end loader
+    END LOADER -->
 
     <div id="wrapper">
         <div class="collapse top-search" id="collapseExample">
@@ -124,23 +124,23 @@
                                 <ul class="dropdown-menu" aria-labelledby="dropdown02">
                                     <li><a class="dropdown-item">Lý luận chính trị<span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="page-subject.php">Những nguyên lý cơ bản của chủ nghĩa Mac-Lenin</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Đường lối cách mạng của Đảng CSVN</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Tư tưởng Hồ Chí Minh</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=maclenin">Những nguyên lý cơ bản của chủ nghĩa Mac-Lenin</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject?subject=CSVN">Đường lối cách mạng của Đảng CSVN</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject?subject=HCM">Tư tưởng Hồ Chí Minh</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="dropdown-item">Toán - Khoa học tự nhiên<span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="page-subject.php">Giải tích</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Đại số tuyến tính</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Cấu trúc rời rạc</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Xác suất thống kê</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=GiaiTich">Giải tích</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=DSTT">Đại số tuyến tính</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=CTRR">Cấu trúc rời rạc</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=XSTK">Xác suất thống kê</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="dropdown-item">Môn học khác<span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="page-subject.php">Kỹ năng nghề nghiệp</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Pháp luật đại cương</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=KNNN">Kỹ năng nghề nghiệp</a></li>
+                                            <li><a class="dropdown-item" href="p./page-subject.php?subject=PLDC">Pháp luật đại cương</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -150,43 +150,43 @@
                                 <ul class="dropdown-menu" aria-labelledby="dropdown02">
                                     <li><a class="dropdown-item"> Cở Sở Nhóm Ngành <span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="page-subject.php">Nhập Môn Lập Trình</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Lập Trình Hướng Đối Tượng</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Cấu Trúc Dữ Liệu Và Giải Thuật</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Cơ Sở Dữ Liệu</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Nhập Môn Mạng Máy Tính</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Giới Thiệu Ngành</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=NMLT">Nhập Môn Lập Trình</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=LTHDT">Lập Trình Hướng Đối Tượng</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=CTDLVGT">Cấu Trúc Dữ Liệu Và Giải Thuật</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=CSDL">Cơ Sở Dữ Liệu</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=NMMMT">Nhập Môn Mạng Máy Tính</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=GTN">Giới Thiệu Ngành</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="dropdown-item"> Cơ Sở Ngành <span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="page-subject.php">Kinh Tế Học Đại Cương</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Tiếp Thị Căn Bản</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Phân Tích Thiết Kế Quy Trình Nghiệp Vụ Doanh Nghiệp</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Quản Trị Dự Án TMĐT</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Thương Mại Điện Tử</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Phát Triển Ứng Dụng Web</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Khai Thác Dữ Liệu</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=KTHDC">Kinh Tế Học Đại Cương</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=TTCB">Tiếp Thị Căn Bản</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=PTNVDN">Phân Tích Thiết Kế Quy Trình Nghiệp Vụ Doanh Nghiệp</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=QLDATMDT">Quản Trị Dự Án TMĐT</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=TMDT">Thương Mại Điện Tử</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=PTUDW">Phát Triển Ứng Dụng Web</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=KTDL">Khai Thác Dữ Liệu</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="dropdown-item"> Chuyên Ngành Bắt Buộc <span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="page-subject.php">Tiếp Thị Trực Tuyến</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Thiết Kế Hệ Thống TMĐT</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Quản Trị Quan Hệ Khách Hàng Và Nhà Cung Cấp</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Hệ Thống Thanh Toán Trực Tuyến</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Hệ Hỗ Trợ Ra Quyết Định</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Pháp Luật Trong TMĐT</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">An Toàn Và Bảo Mật TMĐT</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=TTTT">Tiếp Thị Trực Tuyến</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=TKHTTMDT">Thiết Kế Hệ Thống TMĐT</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=QTKHNCC">Quản Trị Quan Hệ Khách Hàng Và Nhà Cung Cấp</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=HTTTTT">Hệ Thống Thanh Toán Trực Tuyến</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=HHTRQD">Hệ Hỗ Trợ Ra Quyết Định</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=PLTTMDT">Pháp Luật Trong TMĐT</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=ATBMTMDT">An Toàn Và Bảo Mật TMĐT</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="dropdown-item"> Chuyên Ngành Tự Chọn <span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="page-subject.php">Nguyên Lý Kế Toán</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Mạng Xã Hội</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Hoạch Định Nguồn Lực Doanh Nghiệp</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Quản Trị Bán Hàng</a></li>
-                                            <li><a class="dropdown-item" href="page-subject.php">Quản Trị Nhân Lực</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=NLKT">Nguyên Lý Kế Toán</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=MXH">Mạng Xã Hội</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=HDNLDN">Hoạch Định Nguồn Lực Doanh Nghiệp</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=QTBH">Quản Trị Bán Hàng</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=QTNL">Quản Trị Nhân Lực</a></li>
                                         </ul>
                                     </li>
                                    

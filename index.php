@@ -1,3 +1,4 @@
+
 <?php include 'layout/header.php' ?>
 
         <!-- Slideshow -->
@@ -70,7 +71,7 @@
                     <div class="blog-box row">
                         <div class="col-md-4">
                             <div class="post-media">
-                                <a href="page-subject.html" title="">
+                                <a href="page-subject.php" title="">
                                     <img src="upload/blog_square_01.jpg" alt="" class="img-fluid">
                                     <div class="hovereffect"></div>
                                 </a>

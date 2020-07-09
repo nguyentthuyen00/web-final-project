@@ -1,3 +1,17 @@
+<?php 
+    $conn = mysqli_connect("localhost","root","","web-final-project");
+    mysqli_set_charset($conn,"utf8");
+    $monhoc = "js";
+    if(isset($_GET['subject'])){
+        $monhoc = $_GET['subject'];
+    }
+        $sql = "SELECT s.IdSubject,e.NameExam , e.Link 
+                FROM subject s INNER JOIN exam e ON s.IdSubject=e.IdSubject 
+                WHERE s.IdSubject = '$monhoc';";
+        $result = $conn->query($sql)->fetch_assoc();
+    
+    
+?>
 <?php include 'layout/header.php' ?>
 
 <div class="page-title wb">
@@ -28,10 +42,12 @@
                 <div class="page-wrapper">
                     <div class="portfolio row">
 
+
                         <div class="pitem item-w1 item-h1">
                             <div class="blog-box">
                                 <div class="post-media">
-                                    <a href="#" title="">
+                                    
+                                    <a href="<?php echo "$result[Link]" ?>" title="">
                                         <img src="upload/menu_01.jpg" alt="" class="img-fluid">
                                         <div class="hovereffect">
                                             <span></span>
@@ -41,208 +57,208 @@
                                 </div>
                                 <!-- end media -->
                                 <div class="blog-meta">
-                                    <span class="bg-purple"><a href="#" title="">Chương 1</a></span>
-                                    <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
-                                    <small><a href="#" title="">01/05/2020</a></small>
+                                    <span class="bg-purple"><a href="<?php echo "$result[Link]" ?>" title=""><?php echo "$result[NameExam]" ?></a>
+                                    </span>
+                                    
                                 </div>
                                 <!-- end meta -->
+
                             </div>
                             <!-- end blog-box -->
                         </div>
                         <!-- end col -->
 
-                        <div class="pitem item-w1 item-h1">
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta">
-                                    <span class="bg-purple"><a href="#" title="">Chương 2</a></span>
-                                    <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
-                                    <small><a href="#" title="">01/05/2020</a></small>
-                                </div>
-                                <!-- end meta -->
-                            </div>
-                            <!-- end blog-box -->
-                        </div>
-                        <!-- end col -->
-
-                        <div class="pitem item-w1 item-h1">
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta">
-                                    <span class="bg-purple"><a href="#" title="">Chương 3</a></span>
-                                    <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
-                                    <small><a href="#" title="">01/05/2020</a></small>
-                                </div>
-                                <!-- end meta -->
-                            </div>
-                            <!-- end blog-box -->
-                        </div>
-                        <!-- end col -->
-
-                        <div class="pitem item-w1 item-h1">
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta">
-                                    <span class="bg-purple"><a href="#" title="">Chương 4</a></span>
-                                    <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
-                                    <small><a href="#" title="">01/05/2020</a></small>
-                                </div>
-                                <!-- end meta -->
-                            </div>
-                            <!-- end blog-box -->
-                        </div>
-                        <!-- end col -->
-
-                        <div class="pitem item-w1 item-h1">
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta">
-                                    <span class="bg-purple"><a href="#" title="">Chương 5</a></span>
-                                    <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
-                                    <small><a href="#" title="">01/05/2020</a></small>
-                                </div>
-                                <!-- end meta -->
-                            </div>
-                            <!-- end blog-box -->
-                        </div>
-                        <!-- end col -->
-
-                        <div class="pitem item-w1 item-h1">
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta">
-                                    <span class="bg-purple"><a href="#" title="">Chương 6</a></span>
-                                    <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
-                                    <small><a href="#" title="">01/05/2020</a></small>
-                                </div>
-                                <!-- end meta -->
-                            </div>
-                            <!-- end blog-box -->
-                        </div>
-                        <!-- end col -->
-
-                        <div class="pitem item-w1 item-h1">
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta">
-                                    <span class="bg-purple"><a href="#" title="">Chương 7</a></span>
-                                    <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
-                                    <small><a href="#" title="">01/05/2020</a></small>
-                                </div>
-                                <!-- end meta -->
-                            </div>
-                            <!-- end blog-box -->
-                        </div>
-                        <!-- end col -->
-
-                        <div class="pitem item-w1 item-h1">
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta">
-                                    <span class="bg-purple"><a href="#" title="">Chương 8</a></span>
-                                    <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
-                                    <small><a href="#" title="">01/05/2020</a></small>
-                                </div>
-                                <!-- end meta -->
-                            </div>
-                            <!-- end blog-box -->
-                        </div>
-                        <!-- end col -->
-
-                        <div class="pitem item-w1 item-h1">
-                            <div class="blog-box">
-                                <div class="post-media">
-                                    <a href="#" title="">
-                                        <img src="upload/menu_01.jpg" alt="" class="img-fluid">
-                                        <div class="hovereffect">
-                                            <span></span>
-                                        </div>
-                                        <!-- end hover -->
-                                    </a>
-                                </div>
-                                <!-- end media -->
-                                <div class="blog-meta">
-                                    <span class="bg-purple"><a href="#" title="">Chương 9</a></span>
-                                    <h4><a href="#" title="">What is your favorite leather color</a></h4>
-                                    <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
-                                    <small><a href="#" title="">01/05/2020</a></small>
-                                </div>
-                                <!-- end meta -->
-                            </div>
-                            <!-- end blog-box -->
-                        </div>
-                        <!-- end col -->
+                      <!--   <div class="pitem item-w1 item-h1">
+                          <div class="blog-box">
+                              <div class="post-media">
+                                  <a href="#" title="">
+                                      <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                      <div class="hovereffect">
+                                          <span></span>
+                                      </div>
+                                      end hover
+                                  </a>
+                              </div>
+                              end media
+                              <div class="blog-meta">
+                                  <span class="bg-purple"><a href="#" title="">Chương 2</a></span>
+                                  <h4><a href="#" title="">What is your favorite leather color</a></h4>
+                                  <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                  <small><a href="#" title="">01/05/2020</a></small>
+                              </div>
+                              end meta
+                          </div>
+                          end blog-box
+                      </div>
+                      end col
+                      
+                      <div class="pitem item-w1 item-h1">
+                          <div class="blog-box">
+                              <div class="post-media">
+                                  <a href="#" title="">
+                                      <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                      <div class="hovereffect">
+                                          <span></span>
+                                      </div>
+                                      end hover
+                                  </a>
+                              </div>
+                              end media
+                              <div class="blog-meta">
+                                  <span class="bg-purple"><a href="#" title="">Chương 3</a></span>
+                                  <h4><a href="#" title="">What is your favorite leather color</a></h4>
+                                  <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                  <small><a href="#" title="">01/05/2020</a></small>
+                              </div>
+                              end meta
+                          </div>
+                          end blog-box
+                      </div>
+                      end col
+                      
+                      <div class="pitem item-w1 item-h1">
+                          <div class="blog-box">
+                              <div class="post-media">
+                                  <a href="#" title="">
+                                      <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                      <div class="hovereffect">
+                                          <span></span>
+                                      </div>
+                                      end hover
+                                  </a>
+                              </div>
+                              end media
+                              <div class="blog-meta">
+                                  <span class="bg-purple"><a href="#" title="">Chương 4</a></span>
+                                  <h4><a href="#" title="">What is your favorite leather color</a></h4>
+                                  <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                  <small><a href="#" title="">01/05/2020</a></small>
+                              </div>
+                              end meta
+                          </div>
+                          end blog-box
+                      </div>
+                      end col
+                      
+                      <div class="pitem item-w1 item-h1">
+                          <div class="blog-box">
+                              <div class="post-media">
+                                  <a href="#" title="">
+                                      <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                      <div class="hovereffect">
+                                          <span></span>
+                                      </div>
+                                      end hover
+                                  </a>
+                              </div>
+                              end media
+                              <div class="blog-meta">
+                                  <span class="bg-purple"><a href="#" title="">Chương 5</a></span>
+                                  <h4><a href="#" title="">What is your favorite leather color</a></h4>
+                                  <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                  <small><a href="#" title="">01/05/2020</a></small>
+                              </div>
+                              end meta
+                          </div>
+                          end blog-box
+                      </div>
+                      end col
+                      
+                      <div class="pitem item-w1 item-h1">
+                          <div class="blog-box">
+                              <div class="post-media">
+                                  <a href="#" title="">
+                                      <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                      <div class="hovereffect">
+                                          <span></span>
+                                      </div>
+                                      end hover
+                                  </a>
+                              </div>
+                              end media
+                              <div class="blog-meta">
+                                  <span class="bg-purple"><a href="#" title="">Chương 6</a></span>
+                                  <h4><a href="#" title="">What is your favorite leather color</a></h4>
+                                  <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                  <small><a href="#" title="">01/05/2020</a></small>
+                              </div>
+                              end meta
+                          </div>
+                          end blog-box
+                      </div>
+                      end col
+                      
+                      <div class="pitem item-w1 item-h1">
+                          <div class="blog-box">
+                              <div class="post-media">
+                                  <a href="#" title="">
+                                      <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                      <div class="hovereffect">
+                                          <span></span>
+                                      </div>
+                                      end hover
+                                  </a>
+                              </div>
+                              end media
+                              <div class="blog-meta">
+                                  <span class="bg-purple"><a href="#" title="">Chương 7</a></span>
+                                  <h4><a href="#" title="">What is your favorite leather color</a></h4>
+                                  <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                  <small><a href="#" title="">01/05/2020</a></small>
+                              </div>
+                              end meta
+                          </div>
+                          end blog-box
+                      </div>
+                      end col
+                      
+                      <div class="pitem item-w1 item-h1">
+                          <div class="blog-box">
+                              <div class="post-media">
+                                  <a href="#" title="">
+                                      <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                      <div class="hovereffect">
+                                          <span></span>
+                                      </div>
+                                      end hover
+                                  </a>
+                              </div>
+                              end media
+                              <div class="blog-meta">
+                                  <span class="bg-purple"><a href="#" title="">Chương 8</a></span>
+                                  <h4><a href="#" title="">What is your favorite leather color</a></h4>
+                                  <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                  <small><a href="#" title="">01/05/2020</a></small>
+                              </div>
+                              end meta
+                          </div>
+                          end blog-box
+                      </div>
+                      end col
+                      
+                      <div class="pitem item-w1 item-h1">
+                          <div class="blog-box">
+                              <div class="post-media">
+                                  <a href="#" title="">
+                                      <img src="upload/menu_01.jpg" alt="" class="img-fluid">
+                                      <div class="hovereffect">
+                                          <span></span>
+                                      </div>
+                                      end hover
+                                  </a>
+                              </div>
+                              end media
+                              <div class="blog-meta">
+                                  <span class="bg-purple"><a href="#" title="">Chương 9</a></span>
+                                  <h4><a href="#" title="">What is your favorite leather color</a></h4>
+                                  <small><a href="page-about-us.html" title="">Ecautopass Team</a></small>
+                                  <small><a href="#" title="">01/05/2020</a></small>
+                              </div>
+                              end meta
+                          </div>
+                          end blog-box
+                      </div>
+                      end col -->
                     </div>
                     <!-- end portfolio -->
                 </div>
