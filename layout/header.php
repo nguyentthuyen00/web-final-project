@@ -45,11 +45,11 @@
 </head>
 <body>
 
-    <!-- LOADER
+    <!-- LOADER -->
     <div id="preloader">
         <img class="preloader" src="images/loader.gif" alt="">
-    </div>end loader
-    END LOADER -->
+    </div><!-- end loader -->
+    <!-- END LOADER -->
 
     <div id="wrapper">
         <div class="collapse top-search" id="collapseExample">
@@ -100,7 +100,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo">
-                        <a href="index.php" target="_self"> <img src="images/logo.svg" alt="">
+                            <img src="images/logo.svg" alt="">
                         </div><!-- end logo -->
                     </div>
                 </div><!-- end row -->
@@ -177,7 +177,7 @@
                                             <li><a class="dropdown-item" href="./page-subject.php?subject=HTTTTT">Hệ Thống Thanh Toán Trực Tuyến</a></li>
                                             <li><a class="dropdown-item" href="./page-subject.php?subject=HHTRQD">Hệ Hỗ Trợ Ra Quyết Định</a></li>
                                             <li><a class="dropdown-item" href="./page-subject.php?subject=PLTTMDT">Pháp Luật Trong TMĐT</a></li>
-                                            <li><a class="dropdown-item" href="./page-subject.php?subject=ATBMTMDT">An Toàn Và Bảo Mật TMĐT</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=ATVBMTMDT">An Toàn Và Bảo Mật TMĐT</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="dropdown-item"> Chuyên Ngành Tự Chọn <span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
@@ -194,9 +194,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link color-blue-hover" href="page-video.php"><i class="fa fa-play-circle-o"></i> Videos học tập</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link color-blue-hover" href="login.php"> Đăng nhập</a>
                             </li>
                         </ul>
                     </div>
