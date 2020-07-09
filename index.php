@@ -96,7 +96,7 @@ Lecturer Section
 <div class="container">
 
   <header class="section-header">
-    <h3>GIẢNG VIÊN</h3>
+    <h3>ĐỘI NGŨ GIẢNG VIÊN</h3>
   </header>
 
   <div class="row justify-content-center">
@@ -107,9 +107,10 @@ Lecturer Section
         <div class="testimonial-item">
           <img src="images/Thay_Tin.jpg" class="testimonial-img" alt="">
           <h3>Trình Trọng Tín</h3>
-          <h4>Giảng viên môn Phát triển ứng dụng Web</h4>
+          <h4>Phó Bộ môn Thương mại điện tử</h4>
           <p>
-            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+            - Founder của nhiều trang web bán hàng như Ship Đồng Hồ, Nạp Mobile, Tủn Mobile... <br>
+            - Có kinh nghiệm làm việc nhiều năm trong lĩnh vực SALE.
           </p>
         </div>
 
@@ -118,25 +119,33 @@ Lecturer Section
           <h3>Nguyễn Thị Hạnh</h3>
           <h4>CVHT TMĐT2018</h4>
           <p>
-            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+            - Tốt nghiệp ngành Kinh doanh quốc tế tại Đại học Ngoại thương và Master chuyên ngành Thương mại điện tử tại Úc. <br>
+            - Cựu Giám đốc Đối ngoại của sàn Thương mại điện tử Sendo. <br>
+            - Có kinh nghiệm 6 năm giữ chức vụ Trưởng Văn phòng đại diện TP.HCM của Cục Thương mại điện tử và CNTT - VECITA thuộc Bộ Công Thương (nay là Cục Thương mại điện tử và Kinh tế số - IDEA). <br>
+            - Hiện đang là Nhà huấn luyện doanh nghiệp tại Action Coach.
           </p>
         </div>
 
         <div class="testimonial-item">
           <img src="images/Thay_Huy.jpg" class="testimonial-img" alt="">
           <h3>Huỳnh Đức Huy</h3>
-          <h4>Giảng viên môn TMĐT</h4>
+          <h4>Giảng viên</h4>
           <p>
-            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+           - Giảng viên trẻ tiêu biểu Cấp Trường năm 2018. <br>
+           - Tốt nghiệp chuyên ngành Hệ thống thông tin tại Trường Đại học Công nghệ thông tin (UIT) và Khoa học máy tính tại National Institute of Informatics (NII). <br>
+           - Founder của DOTB (Do The Best) - Hệ thống quản lý chuyên sâu cho lĩnh vực Đào tạo. <br>
+           - Có kinh nghiệm làm việc nhiều năm trong lĩnh vực CRM.
           </p>
         </div>
 
         <div class="testimonial-item">
-          <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+          <img src="images/Thay_Ha.jpg" class="testimonial-img" alt="">
           <h3>Văn Đức Sơn Hà</h3>
           <h4>Giảng viên</h4>
           <p>
-            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+          - Founder kiêm CEO của APPNET - Trung Tâm Đào Tạo Digital Marketing. <br>
+          - Tốt nghiệp Cử nhân ngành Khoa học máy tính tại Đại học Bách khoa TP HCM và Thạc sĩ ngành Quản trị kinh doanh tại Đại học Kinh tế Luật. <br>
+          - Có kinh nghiệm làm việc nhiều năm trong lĩnh vực Digital Marketing.
           </p>
         </div>
 
@@ -156,13 +165,13 @@ Team Section
 <section id="team">
 <div class="container">
   <div class="section-header">
-    <h3>Thành viên</h3>
-    <p>Sinh viên lớp TMĐT2018</p>
+    <h3>NGƯỜI SÁNG LẬP</h3>
+    <p>Thực hiện bởi nhóm sinh viên lớp TMĐT2018</p>
   </div>
   <div class="row">
     <div class="col-md-4 wow fadeInUp">
       <div class="member">
-        <img src="img/team-1.jpg" class="img-fluid" alt="">
+        <img src="img/ahuong.jpg" class="img-fluid" alt="">
         <div class="member-info">
           <div class="member-info-content">
             <h4>Nguyễn Thị Diễm Hương</h4>
@@ -174,7 +183,7 @@ Team Section
 
     <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
       <div class="member">
-        <img src="img/team-2.jpg" class="img-fluid" alt="">
+        <img src="img/ahuyen.jpg" class="img-fluid" alt="">
         <div class="member-info">
           <div class="member-info-content">
             <h4>Nguyễn Thị Thu Huyền</h4>
@@ -186,7 +195,7 @@ Team Section
 
     <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
       <div class="member">
-        <img src="img/team-3.jpg" class="img-fluid" alt="">
+        <img src="img/abtuan.jpg" class="img-fluid" alt="">
         <div class="member-info">
           <div class="member-info-content">
             <h4>Bùi Thanh Tuấn</h4>
@@ -209,7 +218,7 @@ Case Study Section
 <div class="container">
 
   <div class="section-header">
-    <h3>Các website hỗ trợ học tập khác</h3>
+    <h3>WEBSITE HỖ TRỢ HỌC TẬP</h3>
     <p>Những website sau đây có thể giúp cho các bạn học lập trình tốt hơn và tìm hiểu thêm các kiến thức về kinh tế.</p>
   </div>
 
