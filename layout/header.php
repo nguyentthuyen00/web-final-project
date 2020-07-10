@@ -142,7 +142,7 @@
                                     <li><a class="dropdown-item">Môn học khác<span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="./page-subject.php?subject=KNNN">Kỹ năng nghề nghiệp</a></li>
-                                            <li><a class="dropdown-item" href="p./page-subject.php?subject=PLDC">Pháp luật đại cương</a></li>
+                                            <li><a class="dropdown-item" href="./page-subject.php?subject=PLDC">Pháp luật đại cương</a></li>
                                         </ul>
                                     </li>
                                 </ul>

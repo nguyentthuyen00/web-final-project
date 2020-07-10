@@ -61,7 +61,7 @@
                                         <div class="blog-box">
                                             <h3><?php echo "$row[1]" ?></h3>
                                             <span class="ml-2 pointer" d-id=345 data-toggle="tooltip" title="Tải xuống">
-                                                <a href="<?php echo "$row[2]" ?>"><i class="fa fa-download"></i></a>
+                                                <a href="<?php echo "$row[2]" ?>" target="_blank" ><i class="fa fa-download"></i></a>
                                             </span>
                                             <!-- end meta -->
 

@@ -8,8 +8,8 @@
                     </div><!-- end col -->
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                            <li class="breadcrumb-item active"><a href="page-contact.html">Liên hệ</a></li>
+                            <li class="breadcrumb-item"><a href="index.php">Trang chủ</a></li>
+                            <li class="breadcrumb-item active"><a href="page-contact.php">Liên hệ</a></li>
                         </ol>
                     </div><!-- end col -->                    
                 </div><!-- end row -->
@@ -51,6 +51,7 @@
             </div><!-- end container -->
         </section>
         <!-- send mail -->
+    
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
         <?php include 'layout/footer.php' ?>
