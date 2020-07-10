@@ -1,19 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION['user'])) {
-    header("location:login.html");
-} else {
-    echo "wellcome " . $_SESSION['user'];
-}
+    echo "Quản lí đề thi";
 ?>
  
- 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home page</title>
-</head>
-<body>
-    <a href="logout.php">Dang xuat</a>
-</body>
-</html>

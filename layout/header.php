@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -83,7 +84,12 @@
                         <div class="topmenu text-center">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><a href="page-contact.php"><i class="fa fa-user-circle-o"></i> Liên hệ </a></li>
-                                <li class="list-inline-item"><a href="login/login.html"><i class="fa fa-lock"></i> Đăng nhập </a></li>
+                                <?php if(!isset($_SESSION['admin']))  {?>
+                                <li class="list-inline-item"><a href="login/login.php"><i class="fa fa-lock"></i> Đăng nhập </a></li>
+                                <?php }else { ?>
+                                <li class="list-inline-item"><a href="login/adminpage.php"><i class="fa fa-lock"></i> Quản lí đề thi </a></li>
+                                <li class="list-inline-item"><a href="login/logout.php"><i class="fa fa-lock"></i> Đăng xuất </a></li>
+                                <?php } ?>
                             </ul><!-- end ul -->
                         </div><!-- end topmenu -->
                     </div><!-- end col -->
