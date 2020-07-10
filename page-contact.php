@@ -53,46 +53,4 @@
         <!-- send mail -->
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-        <script>
-            function sendMail() {
-                const api = 'https://script.google.com/macros/s/AKfycby8rIY-Acha0dumUsbIz-NWRE5NDFfnViMBpscr8IxJMpCEzaw/exec';
-                //Get data from form
-                const email = $('#email').val();
-                const name = $('#name').val();
-                const phone = $('#phone').val();
-                const content = $('#content').val();
-                console.log('Call api')
-                axios({
-                    method: 'post',
-                    url: api,
-                    data: {email, name, phone, content},
-                    headers: {
-                    dataType: 'jsonp',
-                    responseType:'application/json',
-                    'Access-Control-Allow-Headers': 'x-requested-with'
-                    }
-                }).then(response=>response.json())
-                .then(response=>{
-                    console.log('response',response);
-                }).catch(err=>{
-                    console.log('error',err)
-                })
-                // $.ajax({
-                //     type: "POST",
-                //     url: api,
-                //     data: {email, name, phone, content},
-                //     dataType: 'jsonp',
-                //     // responseType:'application/json',
-                //     // crossDomain: true,
-                //     success: (data)=>{
-                //         console.log('resposne',data);
-                //         alert('Gửi liên hệ thành công.');
-                //     },
-    
-                // }); 
-                console.log('run')
-                return false;
-            }
-        </script>
-
         <?php include 'layout/footer.php' ?>
