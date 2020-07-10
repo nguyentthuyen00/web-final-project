@@ -1,5 +1,6 @@
 <?php include 'layout/header.php' ?>
 
+
 <div class="page-title wb">
     <div class="container">
         <div class="row">
@@ -21,6 +22,20 @@
 </div>
 <!-- end page-title -->
 
+    <?php
+        $connection = mysqli_connect("localhost", "root", "", "web-final-project");
+        mysqli_set_charset($connection,"utf8");
+
+        $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
+        $limit = 2;
+        $start = ($current_page - 1) * $limit;
+        $limitn = $start + $limit;
+
+        $sql = "SELECT * FROM video LIMIT $start,$limitn;" ;
+        $result = mysqli_query($connection, $sql);
+        ?>
+        
+
 <section class="section wb">
     <div class="container">
         <div class="row">
@@ -28,94 +43,28 @@
                 <div class="page-wrapper">
                     <div class="blog-video-system">
                         <div class="row">
-
+                            <?php while ($row=mysqli_fetch_row($result)) : ?>
                             <div class="col-md-12">
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLjzaUXKQiFUQLytVOdvOy9GEA3GeLjWWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <iframe width="560" height="315" src="<?php echo $row[2] ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                     <!-- end media -->
                                     <div class="blog-meta big-meta">
-                                        <h4><a href="single.html" title="">Nhập Môn Lập Trình</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh.</p>
-                                        <small><a href="blog-category-01.html" title="">Videos học tập</a></small>
-                                        <small><a href="single.html" title="">01/05/2020</a></small>
-                                        <small><a href="blog-author.html" title="">Ecautopass Team</a></small>
+                                        <h4><?php echo $row[1] ?></h4>
+                                        <p><?php echo $row[3] ?></p>
+                                        <small><a href="page-video.php" title="">Videos học tập</a></small>
+                                        <small><a href="#" title="">01/05/2020</a></small>
+                                        <small><a href="page-about-us.php" title="">Ecautopass Team</a></small>
                                     </div>
                                     <!-- end meta -->
-                                    <a href="single-video.html" class="btn btn-primary">Xem Thêm</a>
                                 </div>
                                 <!-- end blog-box -->
                             </div>
-                            <!-- end col -->
-
-                            <div class="col-md-12">
-                                <div class="blog-box">
-                                    <div class="post-media">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLjzaUXKQiFUTUjmu0Z8Sp2-gf0hzIxXbZ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <!-- end media -->
-                                    <div class="blog-meta big-meta">
-                                        <h4><a href="single.html" title="">Lập Trình Hướng Đối Tượng</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh.</p>
-                                        <small><a href="blog-category-01.html" title="">Videos học tập</a></small>
-                                        <small><a href="single.html" title="">01/05/2020</a></small>
-                                        <small><a href="blog-author.html" title="">Ecautopass Team</a></small>
-                                    </div>
-                                    <!-- end meta -->
-                                    <a href="single-video.html" class="btn btn-primary">Xem Thêm</a>
-                                </div>
-                                <!-- end blog-box -->
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-12">
-                                <div class="blog-box">
-                                    <div class="post-media">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL2Atg2BRb6GuXCcnTK5NeYXunbW_LbZcD" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <!-- end media -->
-                                    <div class="blog-meta big-meta">
-                                        <h4><a href="single.html" title="">Đại Số Tuyến Tính</a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh.</p>
-                                        <small><a href="blog-category-01.html" title="">Videos học tập</a></small>
-                                        <small><a href="single.html" title="">01/05/2020</a></small>
-                                        <small><a href="blog-author.html" title="">Ecautopass Team</a></small>
-                                    </div>
-                                    <!-- end meta -->
-                                    <a href="single-video.html" class="btn btn-primary">Xem Thêm</a>
-                                </div>
-                                <!-- end blog-box -->
-                            </div>
-                            <!-- end col -->
-
-                            <div class="col-md-12">
-                                <div class="blog-box">
-                                    <div class="post-media">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL2Atg2BRb6Gvv5VInHzSJqGqyM4xgziUJ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                    <!-- end media -->
-                                    <div class="blog-meta big-meta">
-                                        <h4><a href="single.html" title="">Xác Suất Thống Kê </a></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh.</p>
-                                        <small><a href="blog-category-01.html" title="">Videos học tập</a></small>
-                                        <small><a href="single.html" title="">01/05/2020</a></small>
-                                        <small><a href="blog-author.html" title="">Ecautopass Team</a></small>
-                                    </div>
-                                    <!-- end meta -->
-                                    <a href="single-video.html" class="btn btn-primary">Xem Thêm</a>
-                                </div>
-                                <!-- end blog-box -->
-                            </div>
-                            <!-- end col -->
+                        <?php endwhile;
+                        mysqli_close($connection); ?>
                         </div>
                         <!-- end row -->
 
@@ -132,12 +81,51 @@
                     <div class="col-md-12">
                         <nav aria-label="Page navigation">
                             <ul class="pagination justify-content-start">
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="page-404.html">2</a></li>
-                                <li class="page-item"><a class="page-link" href="page-404.html">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
+                <?php
+                    $connection = mysqli_connect("localhost", "root", "", "web-final-project");
+                    mysqli_set_charset($connection,"utf8");
+                    $sql = "SELECT count(IdVideo) AS total FROM video ";
+                    $resulttotal =  mysqli_query($connection, $sql);
+                    $row = mysqli_fetch_assoc($resulttotal);
+                    
+                    $totalrecords = $row['total'];
+
+                                    //find limit and current page
+                    $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+                    $limit = 2;
+
+                                    //find total page and start
+                    $total_page = ceil($totalrecords / $limit);
+                    if ($current_page > $total_page)
+                    {
+                        $current_page = $total_page;
+                    }
+                    else if ($current_page < 1)
+                    {
+                        $current_page = 1;
+                    }
+
+                    $start = ($current_page - 1) * $limit;
+                    if ($current_page > 1 && $total_page > 1)
+                    {
+                        echo '<li class="page-item"><a class="page-link" href="./page-video.php?page='.($current_page-1).'">Prev</a></li>';
+                    }
+                    for ($i = 1; $i <= $total_page; $i++)
+                    {
+                        if ($i == $current_page)
+                        {
+                            echo '<li class="page-item"><a class="page-link" href="">'.$i.'</a></li>';
+                        }
+                        else
+                        {
+                            echo '<li class="page-item"><a class="page-link" href="./page-video.php?page='.$i.'">'.$i.'</a></li>';
+                        }
+                    }
+                    if ($current_page < $total_page && $total_page > 1){
+                        echo '<li class="page-item"><a class="page-link" href="./page-video.php?page='.($current_page+1).'">Next</a></li>';
+                    }
+                    ?>              
                             </ul>
                         </nav>
                     </div>
