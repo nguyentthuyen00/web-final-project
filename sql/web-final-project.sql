@@ -2,10 +2,10 @@
 -- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th7 09, 2020 lúc 06:42 PM
--- Phiên bản máy phục vụ: 10.4.10-MariaDB
--- Phiên bản PHP: 7.3.12
+-- Host: 127.0.0.1:3306
+-- Generation Time: Jul 10, 2020 at 09:32 AM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `web-final-project`
+-- Database: `web-final-project`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `exam`
+-- Table structure for table `exam`
 --
 
 DROP TABLE IF EXISTS `exam`;
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `exam` (
 ) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `exam`
+-- Dumping data for table `exam`
 --
 
 INSERT INTO `exam` (`IdExam`, `NameExam`, `Link`, `IdSubject`) VALUES
@@ -83,7 +83,7 @@ INSERT INTO `exam` (`IdExam`, `NameExam`, `Link`, `IdSubject`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `subject`
+-- Table structure for table `subject`
 --
 
 DROP TABLE IF EXISTS `subject`;
@@ -95,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `subject` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `subject`
+-- Dumping data for table `subject`
 --
 
 INSERT INTO `subject` (`IdSubject`, `NameSubject`, `TypeSubject`) VALUES
@@ -137,23 +137,34 @@ INSERT INTO `subject` (`IdSubject`, `NameSubject`, `TypeSubject`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `video`
+-- Table structure for table `video`
 --
 
 DROP TABLE IF EXISTS `video`;
 CREATE TABLE IF NOT EXISTS `video` (
-  `IdVideo` varchar(8) COLLATE utf8_unicode_ci NOT NULL,
+  `IdVideo` int(8) NOT NULL AUTO_INCREMENT,
   `NameVideo` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
   `Link` varchar(2000) COLLATE utf8_unicode_ci NOT NULL,
+  `Detail` varchar(2000) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`IdVideo`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Các ràng buộc cho các bảng đã đổ
+-- Dumping data for table `video`
+--
+
+INSERT INTO `video` (`IdVideo`, `NameVideo`, `Link`, `Detail`) VALUES
+(1, 'Nhập Môn Lập Trình', 'https://www.youtube.com/embed/videoseries?list=PLjzaUXKQiFUQLytVOdvOy9GEA3GeLjWWk', ''),
+(2, 'Lập Trình Hướng Đối Tượng', 'https://www.youtube.com/embed/videoseries?list=PLjzaUXKQiFUTUjmu0Z8Sp2-gf0hzIxXbZ', ''),
+(3, 'Đại Số Tuyến Tính', 'https://www.youtube.com/embed/videoseries?list=PL2Atg2BRb6GuXCcnTK5NeYXunbW_LbZcD', ''),
+(4, 'Xác Suất Thống Kê', 'https://www.youtube.com/embed/videoseries?list=PL2Atg2BRb6Gvv5VInHzSJqGqyM4xgziUJ', '');
+
+--
+-- Constraints for dumped tables
 --
 
 --
--- Các ràng buộc cho bảng `exam`
+-- Constraints for table `exam`
 --
 ALTER TABLE `exam`
   ADD CONSTRAINT `exam_ibfk_1` FOREIGN KEY (`IdSubject`) REFERENCES `subject` (`IdSubject`);
