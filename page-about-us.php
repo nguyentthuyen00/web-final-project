@@ -32,7 +32,7 @@
                         <!-- Diem Huong -->
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                <img src="upload/author-leader.png" alt="" class="img-fluid rounded-circle">
+                                <img src="img/ahuong.jpg" alt="" class="img-fluid rounded-circle">
                             </div>
                             <!-- end col -->
 
@@ -57,7 +57,7 @@
                         <!-- Thu Huyen -->
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                <img src="upload/author-member-1.png" alt="" class="img-fluid rounded-circle">
+                                <img src= "img/ahuyen.jpg" alt="" class="img-fluid rounded-circle">
                             </div>
                             <!-- end col -->
 
@@ -82,7 +82,7 @@
                         <!-- Thanh Tuan -->
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                <img src="upload/author-member-2.png" alt="" class="img-fluid rounded-circle">
+                                <img src="img/abtuan.jpg" alt="" class="img-fluid rounded-circle">
                             </div>
                             <!-- end col -->
 
