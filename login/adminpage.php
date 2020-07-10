@@ -3,7 +3,7 @@ session_start();
 if (!isset($_SESSION['user'])) {
     header("location:login.html");
 } else {
-    echo "Chào mừng " . $_SESSION['user'];
+    echo "wellcome " . $_SESSION['user'];
 }
 ?>
  
@@ -14,6 +14,6 @@ if (!isset($_SESSION['user'])) {
     <title>Home page</title>
 </head>
 <body>
-    <a href="logout.php">ĐĂNG XUẤT</a>
+    <a href="logout.php">Dang xuat</a>
 </body>
 </html>
