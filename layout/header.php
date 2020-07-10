@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Site Metas -->
+        <title>Ecautopass - Tổng hợp tài liệu và đề thi ngành Thương mại điện tử</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <!-- Site Icons -->
+        <link rel="shortcut icon" href="images/apple-touch-icon.svg" type="image/apple-touch-icon" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.svg">
+        
+        <!-- Design fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet"> 
 
-    <!-- Basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Site Metas -->
-    <title>Ecautopass - Tổng hợp tài liệu và đề thi ngành Thương mại điện tử</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/apple-touch-icon.svg" type="image/apple-touch-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.svg">
-    
-    <!-- Design fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet"> 
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- FontAwesome Icons core CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- FontAwesome Icons core CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+        <!-- Responsive styles for this template -->
+        <link href="css/responsive.css" rel="stylesheet">
 
-    <!-- Responsive styles for this template -->
-    <link href="css/responsive.css" rel="stylesheet">
+        <!-- Colors for this template -->
+        <link href="css/colors.css" rel="stylesheet">
 
-    <!-- Colors for this template -->
-    <link href="css/colors.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-
-</head>
 <body>
 
     <!-- LOADER -->
@@ -84,6 +83,7 @@
                         <div class="topmenu text-center">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><a href="page-contact.php"><i class="fa fa-user-circle-o"></i> Liên hệ </a></li>
+                                <li class="list-inline-item"><a href="login/login.html"><i class="fa fa-lock"></i> Đăng nhập </a></li>
                             </ul><!-- end ul -->
                         </div><!-- end topmenu -->
                     </div><!-- end col -->
@@ -108,7 +108,6 @@
                 </div><!-- end row -->
             </div><!-- end header-logo -->
         </div><!-- end header -->
-
 
         <header class="header">
             <div class="container">
@@ -191,17 +190,14 @@
                                             <li><a class="dropdown-item" href="./page-subject.php?subject=QTNL">Quản Trị Nhân Lực</a></li>
                                         </ul>
                                     </li>
-                                   
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link color-blue-hover" href="page-video.php"><i class="fa fa-play-circle-o"></i> Videos học tập</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link color-blue-hover" href="login/login.html"> Đăng nhập</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div><!-- end container -->
         </header><!-- end header -->
+    </body>
