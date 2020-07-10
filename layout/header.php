@@ -87,7 +87,7 @@
                                 <?php if(!isset($_SESSION['admin']))  {?>
                                 <li class="list-inline-item"><a href="login/login.php"><i class="fa fa-lock"></i> Đăng nhập </a></li>
                                 <?php }else { ?>
-                                <li class="list-inline-item"><a href="login/adminpage.php"><i class="fa fa-lock"></i> Quản lí đề thi </a></li>
+                                <li class="list-inline-item"><a href="login/adminpage.php"><i class="fa fa-cog"></i> Quản lý </a></li>
                                 <li class="list-inline-item"><a href="login/logout.php"><i class="fa fa-lock"></i> Đăng xuất </a></li>
                                 <?php } ?>
                             </ul><!-- end ul -->
