@@ -54,7 +54,7 @@
                                         <div class="blog-box">
                                             <h3><?php echo "$row[1]" ?></h3>
                                             <span class="ml-2 pointer" d-id=345 data-toggle="tooltip" title="Tải xuống">
-                                                <a href="<?php echo "$row[2]" ?>" target="_blank" ><i class="fa fa-download"></i></a>
+                                                <a href="<?php echo "$row[2]" ?>" target="_blank" ><i style = "font-size: 20px;" class="fa fa-download"></i></a>
                                             </span>
                                             <!-- end meta -->
 
@@ -126,19 +126,6 @@
                     }
                     
                     ?>
-                        
-                                        <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="page-404.html">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="page-404.html">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                                                            </ul>
-                                                                        </nav>
-                                                                    </div>
-                                                                    end col
-                                                                </div>
-                                                                end row -->
                     </div>
                     <!-- end col -->
                 </div>
