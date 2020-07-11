@@ -17,7 +17,10 @@
    <div id="main">		
    	<div class="container">
    		<h2>Quản lý đề thi</h2>
-   		<a href="page-create-post.php" style="cursor: pointer" class="fa fa-pencil">Tạo mới</a>
+   		<a href="page-create-post.php" style="cursor: pointer; font-family: Roboto;">
+		   <i class="fa fa-plus-square" aria-hidden="true"></i>  
+		   <b>Tạo mới</b>
+		</a>
    		<table class="table">
 
    			<thead class="thead-dark">
@@ -62,7 +65,7 @@
    	<br/>        
    </div>
    <div class="row">
-   	<div class="col-md-12">
+   	<div class="container">
    		<nav aria-label="Page navigation">
    			<ul class="pagination justify-content-start">
 
