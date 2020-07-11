@@ -25,7 +25,7 @@
 			   				<input type="text" class="form-control" name="Link" value="<?php echo $row[2] ?>">
 			   			</div>
 			   			<div class="input-group-btn">
-			   				<input class="btn btn-danger" type="submit" name="editsave" value="Sửa">
+			   				<input class="btn btn-danger" type="submit" name="editsave" value="Sửa" onclick="return confirm('Bạn có thực sự muốn sửa không?')">
 			   			</div>
 			   		</form>
 			   		<br/>        

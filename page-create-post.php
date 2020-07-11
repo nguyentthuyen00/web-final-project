@@ -14,7 +14,7 @@
 			<input type="text" class="form-control" name="Link" placeholder="Link bài thi">
 		</div>
 		<div class="input-group-btn">
-			<input class="btn btn-danger" type="submit" name="add" value="Thêm">
+			<input class="btn btn-danger" type="submit" name="add" value="Thêm" onclick="return confirm('Bạn có thực sự muốn thêm không ?')">
 		</div>
 		</form>
 		<?php 
