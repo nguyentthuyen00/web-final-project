@@ -17,7 +17,7 @@
    <div id="main">		
       <div class="container">
 		<h2>Quản lý đề thi</h2>
-        <a href="page-create-post.php" style="cursor: pointer">Tạo mới</a>
+        <a href="page-create-post.php" style="cursor: pointer" class="fa fa-pencil">Tạo mới</a>
         <table class="table">
 
             <thead class="thead-dark">
@@ -33,8 +33,8 @@
             		<td><?php echo $row[0] ?></td>
             		<td><?php echo $row[2] ?></td>
             		<td><?php echo $row[1] ?></td>
-            		<td><a href="?del=<?php echo $row[3] ?>">Xóa</a></td>
-            		<td><a href="page-edit-post.php?edit=<?php echo $row[3] ?>">Sửa</a></td>
+            		<td><a href="?del=<?php echo $row[3] ?>"><i class="fa fa-trash"></i>Xóa</a></td>
+            		<td><a href="page-edit-post.php?edit=<?php echo $row[3] ?>"><i class="fa fa-edit"></i>Sửa</a></td>
             	</tr>
             <?php endwhile ?>
             	<?php
