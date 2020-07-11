@@ -48,17 +48,19 @@
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
                         <div class="page-wrapper">
-                            <div class="portfolio row">
+                            <div class="portfolio row" style="display: flex;
+                            flex-direction: column;">
                                 <?php while ($row=mysqli_fetch_row($result1)): ?> 
                                     <div class="pitem item-w1 item-h1">
                                         <div class="blog-box">
-                                            <h3><?php echo "$row[1]" ?></h3>
+                                           <a>
+                                           <?php echo "$row[1]" ?>
                                             <span class="ml-2 pointer" d-id=345 data-toggle="tooltip" title="Tải xuống">
-                                                <a href="<?php echo "$row[2]" ?>" target="_blank" ><i class="fa fa-download"></i></a>
+                                                <a href="<?php echo "$row[2]" ?>" target="_blank" ><i style = "font-size: 20px;" class="fa fa-download"></i></a>
                                             </span>
-                                            <!-- end meta -->
-
-                                        </div>
+                                            </a>
+                                        <!-- end meta -->
+                                    </div>
                                         <!-- end blog-box -->
                                     </div>
                                 <?php endwhile;
@@ -70,11 +72,11 @@
                         <!-- end page-wrapper -->
 
                         <hr class="invis">
-
-                       <!--  <div class="row">
+<!-- navigation -->
+                <div class="row">
                            <div class="col-md-12">
                                <nav aria-label="Page navigation">
-                                   <ul class="pagination justify-content-start"> -->
+                                   <ul class="pagination justify-content-start">
                         
                         <?php
                         $connection = mysqli_connect("localhost", "root", "", "web-final-project");
@@ -109,36 +111,23 @@
 
                                     //display page split
                     if ($current_page > 1 && $total_page > 1){
-                        echo '<a href="./page-subject.php?subject='.$monhoc.'&page='.($current_page-1).'">Prev</a> | ';
+                        echo '<li class="page-item"><a class="page-link" href="./page-subject.php?subject='.$monhoc.'&page='.($current_page-1).'">Trước</a></li> ';
                     }
                     for ($i = 1; $i <= $total_page; $i++){
                                         // Nếu là trang hiện tại thì hiển thị thẻ span
                                         // ngược lại hiển thị thẻ a
                         if ($i == $current_page){
-                            echo '<span>'.$i.'</span> | ';
+                            echo '<li class="page-item"><span class="page-link">'.$i.'</span></li> ';
                         }
                         else{
-                            echo '<a href="./page-subject.php?subject='.$monhoc.'&page='.$i.'">'.$i.'</a> | ';
+                            echo '<li class="page-item"><a class="page-link" href="./page-subject.php?subject='.$monhoc.'&page='.$i.'">'.$i.'</a></li> ';
                         }
                     }
                     if ($current_page < $total_page && $total_page > 1){
-                        echo '<a href="./page-subject.php?subject='.$monhoc.'&page='.($current_page+1).'">Next</a> | ';
+                        echo '<li class="page-item"><a class="page-link" href="./page-subject.php?subject='.$monhoc.'&page='.($current_page+1).'">Tiếp theo</a></li> ';
                     }
                     
                     ?>
-                        
-                                        <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="page-404.html">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="page-404.html">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                                                            </ul>
-                                                                        </nav>
-                                                                    </div>
-                                                                    end col
-                                                                </div>
-                                                                end row -->
                     </div>
                     <!-- end col -->
                 </div>

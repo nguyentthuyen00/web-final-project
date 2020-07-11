@@ -109,7 +109,7 @@
                     $start = ($current_page - 1) * $limit;
                     if ($current_page > 1 && $total_page > 1)
                     {
-                        echo '<li class="page-item"><a class="page-link" href="./page-video.php?page='.($current_page-1).'">Prev</a></li>';
+                        echo '<li class="page-item"><a class="page-link" href="./page-video.php?page='.($current_page-1).'">Trước</a></li>';
                     }
                     for ($i = 1; $i <= $total_page; $i++)
                     {
@@ -123,7 +123,7 @@
                         }
                     }
                     if ($current_page < $total_page && $total_page > 1){
-                        echo '<li class="page-item"><a class="page-link" href="./page-video.php?page='.($current_page+1).'">Next</a></li>';
+                        echo '<li class="page-item"><a class="page-link" href="./page-video.php?page='.($current_page+1).'">Tiếp theo</a></li>';
                     }
                     ?>              
                             </ul>
