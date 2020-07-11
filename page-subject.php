@@ -13,7 +13,7 @@
                                 }
 
                                 $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
-                                $limit = 2;
+                                $limit = 10;
                                 $start = ($current_page - 1) * $limit;
                                 $limitn = $start + $limit;
 
@@ -92,7 +92,7 @@
 
                                     //find limit and current page
                     $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
-                    $limit = 2;
+                    $limit = 10;
 
                                     //find total page and start
                     $total_page = ceil($totalrecords / $limit);

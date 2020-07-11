@@ -47,9 +47,9 @@
 <body>
 
     <!-- LOADER -->
-   <div id="preloader">
-        <img class="preloader" src="images/loader.gif" alt="">
-    </div>
+  <!--  <div id="preloader">
+       <img class="preloader" src="images/loader.gif" alt="">
+   </div> -->
     <!-- END LOADER -->
 
     <div id="wrapper">
@@ -87,7 +87,8 @@
                                 <?php if(!isset($_SESSION['admin']))  {?>
                                 <li class="list-inline-item"><a href="login/login.php"><i class="fa fa-lock"></i> Đăng nhập </a></li>
                                 <?php }else { ?>
-                                <li class="list-inline-item"><a href="login/adminpage.php"><i class="fa fa-lock"></i> Quản lí đề thi </a></li>
+                                <li class="list-inline-item"><a href="page-manage-post.php"><i class="fa fa-lock"></i> Quản lí đề thi </a></li>
+                                <li class="list-inline-item"><a href="page-create-post.php"><i class="fa fa-lock"></i>Đăng bài </a></li>
                                 <li class="list-inline-item"><a href="login/logout.php"><i class="fa fa-lock"></i> Đăng xuất </a></li>
                                 <?php } ?>
                             </ul><!-- end ul -->

@@ -1,12 +1,28 @@
-<?php
-<<<<<<< HEAD
-$conn = mysqli_connect('localhost', 'root', '', 'ecautopass');
-=======
-<<<<<<< HEAD
-$conn = mysqli_connect('localhost', 'root', '', 'web-final-project');
-=======
-$conn = mysqli_connect('localhost', 'root', '', 'web');
->>>>>>> c4398dfe78d834e40901a4e33d3411ee0e396095
->>>>>>> 3264278dfe7204bba69114f7a4c25cccc385ff4a
-mysqli_set_charset($conn,'utf8');
-?>
+ <?php
+
+ class DataAccessHelper {
+ 	private $conn;
+
+ 	public function connect(){
+ 		$servername = "localhost:3306";
+ 		$username = "root";
+ 		$password = "";
+ 		$dbname = "web-final-project";
+
+ 		// Create connection
+ 		$GLOBALS['conn'] = new mysqli($servername, $username, $password, $dbname);
+
+ 	}
+ 	public function executeQuery($sql){
+ 		$result = $GLOBALS['conn']->query($sql);
+ 		return $result;
+ 	}
+
+ 	public function close(){
+ 		mysqli_close($GLOBALS['conn']);
+ 	}
+ 	public function executeNonQuery($sql){
+ 		$GLOBALS['conn']->query($sql);
+ 	}
+ }
+ ?> 
