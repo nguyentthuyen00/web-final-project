@@ -47,9 +47,9 @@
 <body>
 
     <!-- LOADER -->
-  <!--  <div id="preloader">
-       <img class="preloader" src="images/loader.gif" alt="">
-   </div> -->
+   <div id="preloader">
+        <img class="preloader" src="images/loader.gif" alt="">
+    </div>
     <!-- END LOADER -->
 
     <div id="wrapper">
