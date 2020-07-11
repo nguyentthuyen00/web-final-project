@@ -87,8 +87,12 @@
                                 <?php if(!isset($_SESSION['admin']))  {?>
                                 <li class="list-inline-item"><a href="login/login.php"><i class="fa fa-lock"></i> Đăng nhập </a></li>
                                 <?php }else { ?>
+<<<<<<< HEAD
                                 <li class="list-inline-item"><a href="page-manage-post.php"><i class="fa fa-lock"></i> Quản lí đề thi </a></li>
                                 <li class="list-inline-item"><a href="page-create-post.php"><i class="fa fa-lock"></i>Đăng bài </a></li>
+=======
+                                <li class="list-inline-item"><a href="login/adminpage.php"><i class="fa fa-cog"></i> Quản lý </a></li>
+>>>>>>> 413cdfe5b2d46c56f2bd4d84922187f299a27092
                                 <li class="list-inline-item"><a href="login/logout.php"><i class="fa fa-lock"></i> Đăng xuất </a></li>
                                 <?php } ?>
                             </ul><!-- end ul -->
@@ -202,6 +206,9 @@
                             <li class="nav-item">
                                 <a class="nav-link color-blue-hover" href="page-video.php"><i class="fa fa-play-circle-o"></i> Videos học tập</a>
                             </li>
+                            <li class="nav-item">
+                            <a class="nav-link color-blue-hover" href="page-about-us.php"></i>About us</a>
+                        </li>
                         </ul>
                     </div>
                 </nav>
