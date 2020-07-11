@@ -1,5 +1,6 @@
    <?php include 'layout/header.php' ?>
    <?php
+   if(isset($_SESSION['admin'])){
    $connection = mysqli_connect("localhost", "root", "", "web-final-project");
    mysqli_set_charset($connection,"utf8");
    $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -114,6 +115,11 @@
    				if ($current_page < $total_page && $total_page > 1){
    					echo '<li class="page-item"><a class="page-link" href="./page-manage-post.php?page='.($current_page+1).'">Tiếp theo</a></li> ';
    				}
+   			}
+   			else
+   			{
+   				echo '<script>window.location.replace("login/login.php")</script>';
+   			}
 
    				?>
    			</div>

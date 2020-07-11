@@ -1,5 +1,6 @@
    <?php include 'layout/header.php' ?>
 	<?php
+	if(isset($_SESSION['admin'])){
 	$connection = mysqli_connect("localhost", "root", "", "web-final-project");
                 mysqli_set_charset($connection,"utf8");
    if(isset($_GET['edit']))
@@ -50,6 +51,11 @@
     				echo "<script>alert('Sửa thất bại')</script>";
     				}
     		}
+    		}
+   			else
+   			{
+   				echo '<script>window.location.replace("login/login.php")</script>';
+   			}
    			 ?>
 
    

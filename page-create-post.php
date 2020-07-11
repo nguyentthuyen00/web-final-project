@@ -18,6 +18,7 @@
 		</div>
 		</form>
 		<?php 
+		if(isset($_SESSION['admin'])){
 		$connection = mysqli_connect("localhost", "root", "", "web-final-project");
 		mysqli_set_charset($connection,"utf8");
 		
@@ -54,6 +55,11 @@
 				echo "<script>alert('Nhập sai tên môn học')</script>";
 			}	 
 		}
+		}
+   			else
+   			{
+   				echo '<script>window.location.replace("login/login.php")</script>';
+   			}
 		?>
 		<br/>        
       </div>
