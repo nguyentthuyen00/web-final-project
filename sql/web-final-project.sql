@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th7 10, 2020 lúc 03:26 PM
+-- Thời gian đã tạo: Th7 11, 2020 lúc 09:18 AM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
--- Phiên bản PHP: 7.3.12
+-- Phiên bản PHP: 7.4.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -173,10 +173,10 @@ CREATE TABLE IF NOT EXISTS `video` (
 --
 
 INSERT INTO `video` (`IdVideo`, `NameVideo`, `Link`, `Detail`) VALUES
-(1, 'Nhập Môn Lập Trình', 'https://www.youtube.com/embed/videoseries?list=PLjzaUXKQiFUQLytVOdvOy9GEA3GeLjWWk', ''),
-(2, 'Lập Trình Hướng Đối Tượng', 'https://www.youtube.com/embed/videoseries?list=PLjzaUXKQiFUTUjmu0Z8Sp2-gf0hzIxXbZ', ''),
-(3, 'Đại Số Tuyến Tính', 'https://www.youtube.com/embed/videoseries?list=PL2Atg2BRb6GuXCcnTK5NeYXunbW_LbZcD', ''),
-(4, 'Xác Suất Thống Kê', 'https://www.youtube.com/embed/videoseries?list=PL2Atg2BRb6Gvv5VInHzSJqGqyM4xgziUJ', '');
+(1, 'Nhập Môn Lập Trình', 'https://www.youtube.com/embed/HwifdLUvn0I', 'LĐTT Lý thuyết Lưu đồ Thuật toán - Nguyễn Tấn Trần Minh Khang'),
+(2, 'Lập Trình Hướng Đối Tượng', 'https://www.youtube.com/embed/ZNss-kQ5bJU', 'Bài học 01 Phần 01 - Nguyễn Tấn Trần Minh Khang'),
+(3, 'Đại Số Tuyến Tính', 'https://www.youtube.com/embed/ELzEkU1gCXM', 'Lý thuyết tổng quan về ma trận - Đặng Pete'),
+(4, 'Xác Suất Thống Kê', 'https://www.youtube.com/embed/Nn54QK0wdeE\"', 'Tính xác suất bằng định nghĩa - Đặng Pete');
 
 --
 -- Các ràng buộc cho các bảng đã đổ
