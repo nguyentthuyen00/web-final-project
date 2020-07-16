@@ -41,7 +41,7 @@
    						<option value="Phát Triển Ứng Dụng Web">Phát Triển Ứng Dụng Web</option>
    						<option value="Khai Thác Dữ Liệu">Khai Thác Dữ Liệu</option>
    					</optgroup>
-   					<optgroup label="Chuyên nhành bắt buộc">
+   					<optgroup label="Chuyên ngành bắt buộc">
    						<option value="Tiếp Thị Trực Tuyến">Tiếp Thị Trực Tuyến</option>
    						<option value="Thiết Kế Hệ Thống TMĐT">Thiết Kế Hệ Thống TMĐT</option>
    						<option value="Quản Trị Quan Hệ Khách Hàng Và Nhà Cung Cấp">Quản Trị Quan Hệ Khách Hàng Và Nhà Cung Cấp</option>
