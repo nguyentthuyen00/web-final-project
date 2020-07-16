@@ -11,7 +11,6 @@
                                 if(isset($_GET['subject'])){
                                     $monhoc = $_GET['subject'];
                                 }
-
                                 $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
                                 $limit = 5;
                                 $start = ($current_page - 1) * $limit;
@@ -53,12 +52,10 @@
                                 <?php while ($row=mysqli_fetch_row($result1)): ?> 
                                     <div class="pitem item-w1 item-h1">
                                         <div class="blog-box">
-                                           <a>
                                            <?php echo "$row[1]" ?>
                                             <span class="ml-2 pointer" d-id=345 data-toggle="tooltip" title="Tải xuống">
                                                 <a href="<?php echo "$row[2]" ?>" target="_blank" ><i style = "font-size: 20px;" class="fa fa-download"></i></a>
                                             </span>
-                                            </a>
                                         <!-- end meta -->
                                     </div>
                                         <!-- end blog-box -->

@@ -1,5 +1,6 @@
    <?php include 'layout/header.php' ?>
 	<?php
+	if(isset($_SESSION['admin'])){
 	$connection = mysqli_connect("localhost", "root", "", "web-final-project");
                 mysqli_set_charset($connection,"utf8");
    if(isset($_GET['edit']))
@@ -25,7 +26,7 @@
 			   				<input type="text" class="form-control" name="Link" value="<?php echo $row[2] ?>">
 			   			</div>
 			   			<div class="input-group-btn">
-			   				<input class="btn btn-danger" type="submit" name="editsave" value="Sửa">
+			   				<input class="btn btn-danger" type="submit" name="editsave" value="Sửa" onclick="return confirm('Bạn có thực sự muốn sửa không?')">
 			   			</div>
 			   		</form>
 			   		<br/>        
@@ -50,6 +51,11 @@
     				echo "<script>alert('Sửa thất bại')</script>";
     				}
     		}
+    		}
+   			else
+   			{
+   				echo '<script>window.location.replace("login/login.php")</script>';
+   			}
    			 ?>
 
    

@@ -56,9 +56,9 @@
         <div class="collapse top-search" id="collapseExample">
             <div class="card card-block">
                 <div class="newsletter-widget text-center">
-                    <form class="form-inline">
-                        <input type="text" class="form-control" placeholder="Bạn đang tìm gì thế?">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                    <form class="form-inline"  method="GET" action="page-search.php">
+                        <input type="text" class="form-control" placeholder="Bạn đang tìm gì thế?" name="search">
+                        <button type="submit" class="btn btn-primary" name="ok"><i class="fa fa-search" ></i></button>
                     </form>
                 </div>
                 <!-- end newsletter -->
