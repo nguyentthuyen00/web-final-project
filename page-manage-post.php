@@ -17,7 +17,7 @@
    <div id="main">		
       <div class="container">
 		<h2>Quản lý đề thi</h2>
-        <a href="page-create-post.php" style="cursor: pointer" class="fa fa-pencil">Tạo mới</a>
+        <a href="page-create-post.php" style="cursor: pointer" class="fa fa-pencil"> Tạo mới</a>
         <table class="table">
 
             <thead class="thead-dark">
